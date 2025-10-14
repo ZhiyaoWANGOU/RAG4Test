@@ -1,0 +1,1724 @@
+
+[{
+"id": 1985739,
+"title": "Use prod cert root instead of local by default",
+"summary": "[Problem] The client currently uses a local certificate root by default instead of the production one. [Symptoms] Misconfiguration risk and potential security mismatch. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Configuration Issue.",
+"category": "Security / Privacy",
+"problem_type": "Configuration Issue",
+"symptoms": ["Uses local certificate root", "Potential security misconfiguration"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1984079,
+"title": "Add support for multiple signatures in the collection metadata",
+"summary": "[Problem] Collection metadata lacks support for multiple signatures. [Symptoms] Unable to handle multiple signature validation cases. [Environment] Firefox. [Possible Category] Functionality. [Problem Type] Functionality Error.",
+"category": "Other",
+"problem_type": "Functionality Error",
+"symptoms": ["Collection metadata cannot store multiple signatures"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1982433,
+"title": "Consider caching the JEXL result per JEXL expression in the default RemoteSettings filter",
+"summary": "[Problem] JEXL results are recalculated repeatedly in the default RemoteSettings filter. [Symptoms] Inefficient evaluation of repeated expressions. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Repeated JEXL evaluation", "Reduced efficiency"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1981367,
+"title": "Only ignore older server changeset if local signature is valid",
+"summary": "[Problem] The client ignores older server changesets regardless of local signature validity. [Symptoms] Possible data inconsistency during synchronization. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Older changesets ignored incorrectly", "Potential data inconsistency"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1981123,
+"title": "Be more precise about JEXL filtering in client logs",
+"summary": "[Problem] Client logs provide imprecise information about JEXL filtering. [Symptoms] Limited debugging clarity in logs. [Environment] Firefox. [Possible Category] Other. [Problem Type] Functionality Error.",
+"category": "Other",
+"problem_type": "Functionality Error",
+"symptoms": ["Unclear JEXL filtering logs", "Difficult to debug filters"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1980589,
+"title": "Data synchronization should never go back in time",
+"summary": "[Problem] Synchronization may regress to previous data states. [Symptoms] Synced data reverts to older versions. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Sync regression", "Older data overwriting newer data"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1980484,
+"title": "Remote settings client should let glean handle telemetry sampling",
+"summary": "[Problem] Telemetry sampling is handled by the Remote Settings client instead of Glean. [Symptoms] Inconsistent telemetry sampling behavior. [Environment] Firefox. [Possible Category] Other. [Problem Type] Configuration Issue.",
+"category": "Other",
+"problem_type": "Configuration Issue",
+"symptoms": ["Telemetry sampling not delegated to Glean", "Inconsistent telemetry handling"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1979320,
+"title": "Lots of EmptyDatabaseError:  \"main/nimbus-desktop-experiments\"  has not been synced yet when running mochitest-browser",
+"summary": "[Problem] EmptyDatabaseError occurs for 'main/nimbus-desktop-experiments' during mochitest-browser. [Symptoms] Test execution fails due to unsynced database. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Crash.",
+"category": "Account / Sync",
+"problem_type": "Crash",
+"symptoms": ["EmptyDatabaseError", "Unsynced Nimbus experiments", "Mochitest failure"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1974699,
+"title": "Improve RemoteSettingsClient.db/.attachments lazy handling to work better with TypeScript",
+"summary": "[Problem] Lazy handling of database and attachments is not optimized for TypeScript. [Symptoms] Integration or typing issues when using TypeScript. [Environment] Firefox. [Possible Category] Other. [Problem Type] Functionality Error.",
+"category": "Other",
+"problem_type": "Functionality Error",
+"symptoms": ["Poor TypeScript integration", "Inefficient lazy handling of db/attachments"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1966937,
+"title": "Consider having a queue for Remote Settings network requests",
+"summary": "[Problem] Remote Settings handles multiple network requests without a queue. [Symptoms] Potential race conditions or request overload. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Uncoordinated network requests", "Possible request conflicts"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1966863,
+"title": "Gecko Remote-Settings client is caching attachments that consuming code is also caching",
+"summary": "[Problem] Both the client and consuming code cache attachments redundantly. [Symptoms] Duplicate caching increases memory usage. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Redundant attachment caching", "Increased memory usage"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1966671,
+"title": "Add `step` field to client Telemetry and send telemetry before starting downloads",
+"summary": "[Problem] Telemetry lacks a 'step' field and is sent too late. [Symptoms] Missing or delayed telemetry data before downloads. [Environment] Firefox. [Possible Category] Other. [Problem Type] Functionality Error.",
+"category": "Other",
+"problem_type": "Functionality Error",
+"symptoms": ["Telemetry lacks step field", "Data sent after downloads start"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1966522,
+"title": "Remote settings client appears to be returning empty responses when loading experiments collection immediately after startup",
+"summary": "[Problem] Remote settings client returns empty responses at startup. [Symptoms] Experiments collection fails to load initially. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Empty responses from client", "Experiments collection not loaded"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1965928,
+"title": "Intermittent TEST-UNEXPECTED-FAIL | remotereftests.py | Timed out while waiting for server startup.",
+"summary": "[Problem] Tests intermittently fail due to timeout while waiting for server startup. [Symptoms] TEST-UNEXPECTED-FAIL errors during remotereftests.py execution. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Crash.",
+"category": "Network / Connection",
+"problem_type": "Crash",
+"symptoms": ["Timeout waiting for server", "Intermittent test failures"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": 1963015,
+"title": "Fix some jsdoc issues in RemoteSettingsClient.sys.mjs / Attachments.sys.mjs",
+"summary": "[Problem] jsdoc comments contain issues in RemoteSettingsClient.sys.mjs and Attachments.sys.mjs. [Symptoms] Documentation inconsistency or missing type hints. [Environment] Firefox. [Possible Category] Other. [Problem Type] Other.",
+"category": "Other",
+"problem_type": "Other",
+"symptoms": ["Incorrect jsdoc annotations", "Inconsistent documentation"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539698",
+"title": "clear cache",
+"summary": "[Problem] User wants to clear browser cache. [Symptoms] Seeking instructions to remove cached data. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Other.",
+"category": "UI / Interaction",
+"problem_type": "Other",
+"symptoms": ["Needs to clear cache", "Looking for browser data removal method"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539691",
+"title": "Pocket",
+"summary": "[Problem] User cannot find saved Pocket articles. [Symptoms] Pocket content missing or not visible. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Pocket account not showing articles", "Unsure if Pocket still available"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539643",
+"title": "Problem loading popular websites e.g. eBay (tried a new \"profile\" for troubleshooting)",
+"summary": "[Problem] Websites like eBay fail to load properly in Firefox. [Symptoms] Pages not displaying correctly even with new profile; Edge works normally. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Websites not loading correctly", "Edge browser works fine", "Tried new profile with no improvement"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539693",
+"title": "Internet redirected",
+"summary": "[Problem] User suspects their internet was redirected without permission. [Symptoms] Unexpected redirection behavior. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Other.",
+"category": "Security / Privacy",
+"problem_type": "Other",
+"symptoms": ["Internet redirection without consent", "Possible unauthorized network behavior"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539690",
+"title": "ADD   ON  BUTTON",
+"summary": "[Problem] Add-on button no longer displays extension icons after update. [Symptoms] Cannot access or use extensions like video downloader or history eraser; theme tab appears instead. [Environment] Firefox. [Possible Category] Extension / Plugin. [Problem Type] UI Defect.",
+"category": "Extension / Plugin",
+"problem_type": "UI Defect",
+"symptoms": ["Add-on list missing", "Extensions not accessible", "Theme tab opens instead of list"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539611",
+"title": "Unable to send DM on particular fb page",
+"summary": "[Problem] Cannot send direct messages on a specific Facebook page. [Symptoms] Facebook reports issue possibly related to ad blocker. [Environment] Firefox. [Possible Category] Extension / Plugin. [Problem Type] Functionality Error.",
+"category": "Extension / Plugin",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot send Facebook DMs", "Ad blocker may interfere with messaging"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539663",
+"title": "My facebook page comes up blank and my youtube doesn't play video, I can use chat.",
+"summary": "[Problem] Facebook and YouTube fail to display or play videos in Firefox. [Symptoms] Facebook page loads blank, YouTube videos do not play though chat works fine. Other devices unaffected. [Environment] Firefox. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["Blank Facebook page", "YouTube videos not playing", "Other devices work normally"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539683",
+"title": "Firefox 136",
+"summary": "[Problem] After updating to Firefox 136, PDF pages display as black. [Symptoms] PDF viewer shows black screens instead of content. [Environment] Firefox 136. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["PDF pages appear black", "PDF viewer malfunction after update"],
+"environment": {"os": "Firefox", "firefox_version": "136", "hardware": null}
+},
+{
+"id": "1539686",
+"title": "no backup restoring",
+"summary": "[Problem] Firefox account did not restore bookmarks or passwords after Windows reinstall. [Symptoms] Missing bookmarks and saved credentials after sign-in. [Environment] Windows / Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["No bookmarks restored", "Passwords missing after reinstall"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539469",
+"title": "Why is it impossible to sign into my Outlook account on Firefox?",
+"summary": "[Problem] Unable to sign into Outlook using Firefox. [Symptoms] Login page stalls after entering email, never loads security window; works on Edge. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Outlook login hangs", "Security window never loads", "Edge works normally"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539604",
+"title": "Can't log in to Hotmail",
+"summary": "[Problem] After update, Firefox requests biometric or security key to access Hotmail instead of password. [Symptoms] Unable to log in; other browsers work. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Functionality Error.",
+"category": "Security / Privacy",
+"problem_type": "Functionality Error",
+"symptoms": ["Firefox asks for biometric authentication", "Cannot use password to sign in", "Login works in other browsers"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539614",
+"title": "I have tried Everything",
+"summary": "[Problem] Firefox fails to load webpages or emails after working earlier. [Symptoms] Webpages, emails, and YouTube not loading; refresh, reinstall, and cache clearing did not fix issue. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Webpages fail to load", "Emails not opening", "YouTube not loading", "Tried reinstall and refresh with no success"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539626",
+"title": "gmail does not work in firefox",
+"summary": "[Problem] Gmail fails to load in Firefox while working in other browsers. [Symptoms] Cannot access Gmail despite repeated sign-ins. [Environment] Firefox on desktop. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Gmail not loading", "Other browsers work fine", "Repeated sign-ins fail"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539627",
+"title": "Accessibility consistency",
+"summary": "[Problem] Firefox inconsistently supports web applications and media playback. [Symptoms] Some sites or YouTube videos stop working, forcing user to switch to Chrome. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Functionality Error.",
+"category": "Performance",
+"problem_type": "Functionality Error",
+"symptoms": ["Web apps fail intermittently", "YouTube videos not playing", "Requires switching to Chrome"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539628",
+"title": "Firefix not loading pages correctly",
+"summary": "[Problem] Firefox not loading websites properly since morning. [Symptoms] Gmail, Amazon, and YouTube fail to load though Edge works fine. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Webpages not displaying", "Sites work in Edge", "Started suddenly after previous night"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539629",
+"title": "Many websites don't run on Firefox.",
+"summary": "[Problem] Several websites fail to function properly in Firefox. [Symptoms] Sites like Virgin Atlantic, Holiday Autos, and Copa Airlines do not load or operate; user must switch to Chrome. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Websites fail to run", "Need to switch to Chrome", "Frequent incompatibility with certain sites"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539635",
+"title": "My gmail no longer works with the latest (143.0.4) update.",
+"summary": "[Problem] Gmail stopped functioning after updating to Firefox 143.0.4. [Symptoms] Email list displays but individual messages will not open. [Environment] Firefox 143.0.4. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Gmail messages not opening", "Issue started after Firefox 143.0.4 update"],
+"environment": {"os": "Firefox", "firefox_version": "143.0.4", "hardware": null}
+},
+{
+"id": "1539654",
+"title": "Firefox not loading Amazon, YouTube videos",
+"summary": "[Problem] Firefox fails to load major websites correctly. [Symptoms] Facebook and Twitter not loading, YouTube videos not playing, Amazon page scrambled with code. [Environment] Firefox. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["Facebook and Twitter not loading", "YouTube videos not playing", "Amazon page displays raw code"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539612",
+"title": "why is not possible to update Firefox to the latest version?",
+"summary": "[Problem] Auto-update feature disabled without user request. [Symptoms] Cannot update Firefox automatically. [Environment] Firefox. [Possible Category] Installation / Update. [Problem Type] Configuration Issue.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Auto-update disabled", "User did not disable it", "Wants updater re-enabled"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539674",
+"title": "youtube",
+"summary": "[Problem] YouTube videos play with choppy performance. [Symptoms] Playback stutters or lags. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Choppy YouTube playback", "Video stuttering"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539669",
+"title": "How do I change a saved password?",
+"summary": "[Problem] User wants to modify a previously saved password in Firefox. [Symptoms] Seeking password management instructions. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Other.",
+"category": "Security / Privacy",
+"problem_type": "Other",
+"symptoms": ["Wants to edit saved password"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539546",
+"title": "make text in address bar bigger",
+"summary": "[Problem] Address bar text is too small after update. [Symptoms] URL text appears tiny while other interface text remains normal. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] UI Defect.",
+"category": "UI / Interaction",
+"problem_type": "UI Defect",
+"symptoms": ["Tiny text in address bar", "Normal text elsewhere", "Issue started after update"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539673",
+"title": "I want to change my email address",
+"summary": "[Problem] User wants to update Firefox account email from Yahoo to Gmail. [Symptoms] Seeks to change account email while keeping personal information unchanged. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Other.",
+"category": "Account / Sync",
+"problem_type": "Other",
+"symptoms": ["Wants to change email address for account", "Switch from Yahoo to Gmail"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539671",
+"title": "My pinned tabs keep disappearing, even when I haven't closed firefox",
+"summary": "[Problem] Pinned tabs vanish unexpectedly during active sessions. [Symptoms] Tabs disappear without user closing browser. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Pinned tabs disappear", "Happens during session without closing Firefox"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539667",
+"title": "Firefox won't stop freezing. Ideas?",
+"summary": "[Problem] Firefox freezes repeatedly even after clean reinstall. [Symptoms] Freezing occurs after syncing; about:processes also freezes. Works normally without sync. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Crash.",
+"category": "Performance",
+"problem_type": "Crash",
+"symptoms": ["Browser freezing", "Freezes after sync", "about:processes unresponsive"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539647",
+"title": "I WANT TO UPDATE FIREFOX BECAUSE I CAN'T LOG IN TO KIJIIJI ANY MORE,GIVE ME A 403 CODE",
+"summary": "[Problem] User cannot log into Kijiji and receives HTTP 403 error. [Symptoms] Login blocked; suspects outdated Firefox version. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Kijiji login blocked with 403", "Thinks update may resolve issue"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539125",
+"title": "Stop automatically adding sites I visit to my Homepage Shortcuts",
+"summary": "[Problem] Visited sites automatically added to homepage shortcuts. [Symptoms] Homepage populates with visited sites; user wants to disable this behavior. [Environment] Windows 11, Firefox 143.0.3. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Visited sites appear as homepage shortcuts", "User wants to stop automatic addition"],
+"environment": {"os": "Windows 11", "firefox_version": "143.0.3", "hardware": "Desktop PC"}
+},
+{
+"id": "1539638",
+"title": "REMOVE",
+"summary": "[Problem] User requests deletion of post. [Symptoms] Only contains deletion request. [Environment] Firefox. [Possible Category] Other. [Problem Type] Other.",
+"category": "Other",
+"problem_type": "Other",
+"symptoms": ["Request to delete message"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539623",
+"title": "Update",
+"summary": "[Problem] User unsure if Firefox is up to date. [Symptoms] Website indicates browser is outdated. [Environment] Firefox. [Possible Category] Installation / Update. [Problem Type] Configuration Issue.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Website warns browser is outdated", "User wants to check current version"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539632",
+"title": "How to automatically focus urlbar when \"New tab next to right\"?",
+"summary": "[Problem] New tab does not automatically focus the address bar. [Symptoms] User wants URL bar to be focused when opening a tab next to the current one. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["New tab does not focus URL bar", "Wants automatic focus behavior"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539576",
+"title": "New drive",
+"summary": "[Problem] User needs to recover bookmarks and passwords after replacing hard drive. [Symptoms] Missing saved data after new drive installation. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Lost bookmarks and passwords", "Reinstalled on new drive"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539619",
+"title": "Remove Speaker / Audio icon from tabs FF 143",
+"summary": "[Problem] User wants to remove speaker/audio icon from tabs in Firefox 143. [Symptoms] CSS methods found online no longer work after latest update. [Environment] Firefox 143. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Audio icon visible on tabs", "Old CSS tweaks ineffective after update"],
+"environment": {"os": "Firefox", "firefox_version": "143", "hardware": null}
+},
+{
+"id": "1539615",
+"title": "Speedest download results much slower than normal",
+"summary": "[Problem] Firefox shows slower internet speed test results than other browsers. [Symptoms] Download speed lower despite same connection; refresh and proxy settings checked. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Performance Issue.",
+"category": "Network / Connection",
+"problem_type": "Performance Issue",
+"symptoms": ["Speed test results slower than Chrome/Edge", "Same issue persists after refresh", "No proxy enabled"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539606",
+"title": "64 & 32 bit versions appearing on pc",
+"summary": "[Problem] Both 32-bit and 64-bit Firefox installations detected on same PC. [Symptoms] Firefox appears twice in default apps; unsure which version to keep or remove. [Environment] Windows PC. [Possible Category] Installation / Update. [Problem Type] Configuration Issue.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Both 32-bit and 64-bit versions installed", "Duplicate entries in default apps"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539241",
+"title": "Bug Infection",
+"summary": "[Problem] User receives fake virus and system alert pop-ups while browsing. [Symptoms] Warnings about Trojans, expired antivirus, and fake security alerts; likely phishing. [Environment] Linux. [Possible Category] Security / Privacy. [Problem Type] Functionality Error.",
+"category": "Security / Privacy",
+"problem_type": "Functionality Error",
+"symptoms": ["Fake virus alerts", "Phishing pop-ups", "False McAfee warning"],
+"environment": {"os": "Linux", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539490",
+"title": "strange font",
+"summary": "[Problem] Fonts display unevenly on new Windows 10 installation. [Symptoms] Letters appear with mixed thin and thick lines; spell check not working despite being enabled. [Environment] Windows 10. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["Uneven font thickness", "Spell check not functioning"],
+"environment": {"os": "Windows 10", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539517",
+"title": "can's use the \" Custom Cursor \" extension",
+"summary": "[Problem] User unable to use the 'Custom Cursor' extension. [Symptoms] Extension not functioning as expected. [Environment] Firefox. [Possible Category] Extension / Plugin. [Problem Type] Functionality Error.",
+"category": "Extension / Plugin",
+"problem_type": "Functionality Error",
+"symptoms": ["Custom Cursor extension not working"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539554",
+"title": "AI chatbot question",
+"summary": "[Problem] User asks about adding 'Gork' to available chatbots. [Symptoms] Inquiry about chatbot support. [Environment] Firefox. [Possible Category] Other. [Problem Type] Other.",
+"category": "Other",
+"problem_type": "Other",
+"symptoms": ["Question about adding chatbot 'Gork'"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539588",
+"title": "YouTube videos",
+"summary": "[Problem] YouTube videos stop playing and freeze Firefox. [Symptoms] Video halts, navigation buttons stop working, Firefox hangs or takes time to reopen; audio sometimes continues after closing browser. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Crash.",
+"category": "Performance",
+"problem_type": "Crash",
+"symptoms": ["YouTube playback stops", "Browser freezes", "Audio continues after closing"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539463",
+"title": "Manage Exceptions with Cookies and Data",
+"summary": "[Problem] Managing cookie exceptions is inefficient in Firefox. [Symptoms] Must manually type site addresses; cookies delete only when Firefox closes; user finds design inconvenient. [Environment] Windows. [Possible Category] Security / Privacy. [Problem Type] UI Defect.",
+"category": "Security / Privacy",
+"problem_type": "UI Defect",
+"symptoms": ["Manual entry for cookie exceptions", "Cookies deleted only on browser close", "No easy way to copy-paste or bulk manage"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539222",
+"title": "Nothing showing up in bookmarks toolbar",
+"summary": "[Problem] Bookmarks toolbar visible but empty despite settings. [Symptoms] Toolbar space appears but contains no bookmarks; must use menu to access. [Environment] macOS 2020 M1, Firefox 143.0.3. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks toolbar empty", "Menu access required", "Issue appeared after update"],
+"environment": {"os": "macOS", "firefox_version": "143.0.3", "hardware": "M1 Mac"}
+},
+{
+"id": "1539582",
+"title": "can you help me if there are any questions?",
+"summary": "[Problem] User requests account recovery assistance. [Symptoms] Concerned about losing account access. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Other.",
+"category": "Account / Sync",
+"problem_type": "Other",
+"symptoms": ["Requests help for lost account"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539578",
+"title": "Progressive web apps",
+"summary": "[Problem] User asks when Progressive Web Apps will be installable on desktop Firefox. [Symptoms] Seeks guidance on enabling PWA support through configuration. [Environment] Windows. [Possible Category] UI / Interaction. [Problem Type] Other.",
+"category": "UI / Interaction",
+"problem_type": "Other",
+"symptoms": ["Wants to install Progressive Web Apps on desktop", "Asks about configuration options"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539580",
+"title": "where are my bookmarks?",
+"summary": "[Problem] Bookmarks and history disappeared after being away for two weeks. [Symptoms] Missing bookmarks and history data; user frustrated about lack of warning. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks disappeared", "History missing", "No warning before data loss"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539566",
+"title": "all my bookmarks has disapeared and i cant add new ones I not sure if the last update had anything to do with it",
+"summary": "[Problem] Bookmarks disappeared and new ones cannot be added after recent update. [Symptoms] Lost all bookmarks and unable to create new ones. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks lost", "Cannot add new bookmarks", "Possibly related to recent update"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539567",
+"title": "multiaccount add-on By Firefox",
+"summary": "[Problem] User accidentally removed Firefox Multi-Account Containers add-on. [Symptoms] Add-on missing and no longer functioning or visible in extensions list. [Environment] Firefox. [Possible Category] Extension / Plugin. [Problem Type] Functionality Error.",
+"category": "Extension / Plugin",
+"problem_type": "Functionality Error",
+"symptoms": ["Multi-Account Containers removed", "Add-on not showing up or working"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539577",
+"title": "Get rid of it",
+"summary": "[Problem] User wants to remove automatic Google sign-in window. [Symptoms] Google login prompt appears automatically. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Configuration Issue.",
+"category": "Security / Privacy",
+"problem_type": "Configuration Issue",
+"symptoms": ["Automatic Google sign-in window appears", "Wants to disable it"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539544",
+"title": "xfinity streaaming",
+"summary": "[Problem] Xfinity streaming service does not work in Firefox. [Symptoms] Unable to stream video content from Xfinity site. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Xfinity streaming fails", "Unable to watch videos in Firefox"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539539",
+"title": "FIREFOX : Settings : Home : New Tabs",
+"summary": "[Problem] Firefox does not allow setting a custom URL for new tabs. [Symptoms] Home page can have URL, but new tabs limited to Blank or Firefox Home. [Environment] Windows 10 Professional, Firefox. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot set URL for new tabs", "Only Blank or Firefox Home available"],
+"environment": {"os": "Windows 10", "firefox_version": "Firefox", "hardware": "Intel Core i7-6700T PC"}
+},
+{
+"id": "1539540",
+"title": "Forced Updates - Can't Stop Them",
+"summary": "[Problem] Firefox performs forced updates despite manual settings. [Symptoms] Browser restarts automatically, causing loss of form data and open tabs. [Environment] Firefox. [Possible Category] Installation / Update. [Problem Type] Configuration Issue.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Forced restarts after updates", "Loss of unsaved form data", "Update occurs without notice"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1528001",
+"title": "Access Denied for commonly used websites",
+"summary": "[Problem] Access denied errors on multiple common websites in Firefox. [Symptoms] Sites like Lowe’s, Home Depot, and American Airlines show permission denied errors, while older Firefox versions work fine. [Environment] Firefox 135.0.1 and newer. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Access denied messages on multiple sites", "Older Firefox version works fine", "Error includes reference codes"],
+"environment": {"os": "Firefox", "firefox_version": "135.0.1+", "hardware": null}
+},
+{
+"id": "1539429",
+"title": "youtube",
+"summary": "[Problem] User requests help updating Firefox to fix YouTube issues. [Symptoms] YouTube not functioning, user wants browser update. [Environment] Firefox. [Possible Category] Installation / Update. [Problem Type] Functionality Error.",
+"category": "Installation / Update",
+"problem_type": "Functionality Error",
+"symptoms": ["YouTube not working", "User requests Firefox update"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539530",
+"title": "Ecosita Search instead of Google Chrome",
+"summary": "[Problem] User wants to replace Google Chrome search with Ecosita in Firefox. [Symptoms] Seeks to change default search engine configuration. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Wants to use Ecosita search", "Replace Google search engine"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539551",
+"title": "Is the guid field in JSON of the bookmarks file now encrypted?",
+"summary": "[Problem] Unclear bookmark JSON structure; user cannot map parent-child relationships. [Symptoms] GUID values appear random and do not match ID fields; difficulty identifying bookmark folder hierarchy. [Environment] Firefox. [Possible Category] Other. [Problem Type] Functionality Error.",
+"category": "Other",
+"problem_type": "Functionality Error",
+"symptoms": ["GUIDs do not match expected parent IDs", "Cannot trace bookmark folder relationships"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539548",
+"title": "hitting 'enter' deletes search bar",
+"summary": "[Problem] Pressing Enter key clears search bar instead of executing search. [Symptoms] Search request deleted upon Enter; persists after reinstall. [Environment] macOS 15.6.1, Firefox 143.0.4 (64-bit). [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Enter key clears search bar", "Occurs after reinstall", "macOS system affected"],
+"environment": {"os": "macOS 15.6.1", "firefox_version": "143.0.4", "hardware": null}
+},
+{
+"id": "1539545",
+"title": "I ned help with the tabs and menu bars they shrunk down to wear I cant see the without a magnifier. I have low vision problems and this new setup makes it nearly useless for me",
+"summary": "[Problem] Tabs and menu bars too small after update, causing accessibility issues. [Symptoms] Interface elements shrunk; user with low vision cannot read text without magnifier. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] UI Defect.",
+"category": "UI / Interaction",
+"problem_type": "UI Defect",
+"symptoms": ["Tabs and menu bars too small", "Difficult to read for low vision user", "Issue started after update"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539538",
+"title": "Delete an old account configuration",
+"summary": "[Problem] User wants to remove old Firefox account linked to previous system. [Symptoms] Old credentials and password manager data visible; user requests deletion. [Environment] macOS. [Possible Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Old account visible", "Wants to delete old configuration", "Migrated from Windows to macOS"],
+"environment": {"os": "macOS", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539489",
+"title": "Error Uploading Salary Calculator Extension",
+"summary": "[Problem] Firefox extension upload fails on addons.mozilla.org due to manifest error. [Symptoms] Signing error from manifest file; switching to manifest v3 causes deprecated warnings. [Environment] Firefox / AMO. [Possible Category] Extension / Plugin. [Problem Type] Functionality Error.",
+"category": "Extension / Plugin",
+"problem_type": "Functionality Error",
+"symptoms": ["Manifest file signing error", "Deprecation warnings for browser_action", "Extension upload rejected"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1538197",
+"title": "Firefox Side Bar Ai Chat Bots",
+"summary": "[Problem] Microphone does not work when using AI chatbots in sidebar. [Symptoms] Voice input not detected; no audio recording during chatbot interaction. [Environment] Firefox. [Possible Category] Extension / Plugin. [Problem Type] Functionality Error.",
+"category": "Extension / Plugin",
+"problem_type": "Functionality Error",
+"symptoms": ["Microphone not working with sidebar AI chatbots", "Voice input fails"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1538855",
+"title": "website not open",
+"summary": "[Problem] Certain websites fail to open in Firefox while working in other browsers. [Symptoms] Site like adb.wearosbox.com inaccessible in Firefox but fine elsewhere. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Specific websites do not open", "Work in other browsers"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539026",
+"title": "my internet service has change. it has become a problem for me to get on the internet",
+"summary": "[Problem] User cannot access the internet after network provider change. [Symptoms] Internet connection issues after switching network service. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Configuration Issue.",
+"category": "Network / Connection",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot connect to internet", "Network changed recently"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539145",
+"title": "firefox facebook error \"This page isn't available right nowThis may be because of a technical error that we're working to get fixed. Try reloading this page.\"",
+"summary": "[Problem] Facebook crashes and displays 'page not available' error in Firefox. [Symptoms] Facebook loads then fails after 10–30 seconds; Chrome unaffected; clearing cache and disabling extensions did not help. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Facebook page crashes after short time", "Other browsers work fine", "Cache clearing no effect"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539181",
+"title": "I do not want to save my downloads automatically. What setting do I change?",
+"summary": "[Problem] User wants Firefox to stop automatically saving downloads. [Symptoms] Seeks to change download behavior settings. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Downloads automatically saved", "Wants manual save prompt"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539165",
+"title": "Google Drive not loading properly",
+"summary": "[Problem] Google Drive fails to load or navigate in Firefox. [Symptoms] Rotating loading circle, cannot open folders or files; works in Chrome and Safari. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Google Drive not loading", "Folders and files not opening", "Other browsers work fine"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539115",
+"title": "Twitch does not open at all",
+"summary": "[Problem] Twitch website fails to open in Firefox. [Symptoms] Twitch page does not load. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Twitch not opening", "Page fails to load"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539398",
+"title": "last update",
+"summary": "[Problem] Latest Firefox update causes performance slowdown. [Symptoms] Slower page processing and response after update. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Firefox slower after update", "Reduced processing speed"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539414",
+"title": "не могу синхронизировать старые данные",
+"summary": "[Problem] Unable to sync old passwords between PC and phone. [Symptoms] No security key available; saved passwords missing after login. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Passwords not syncing", "Missing old account data", "No security key set"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539452",
+"title": "website not opening",
+"summary": "[Problem] Specific website kisskh.com does not open in Firefox. [Symptoms] Site fails to load or connect. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["kisskh.com not opening", "Connection failure"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539536",
+"title": "microsoft \"on this day\" photos will not show",
+"summary": "[Problem] Microsoft 'On This Day' photo page does not load in Firefox. [Symptoms] Page stuck on gray screen; works in Chrome; reinstall did not fix issue. [Environment] Firefox. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["Microsoft photos page frozen", "Gray loading screen", "Works in Chrome"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539524",
+"title": "Weather Widget on Homepage Only Allows me to Choose Canadian Cities",
+"summary": "[Problem] Firefox weather widget shows wrong country options. [Symptoms] Location detected as Canada despite being in the US; only Canadian cities available. [Environment] Windows, Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Weather widget restricted to Canadian cities", "Incorrect location detection"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539527",
+"title": "biometric fingerprint sign on",
+"summary": "[Problem] User inquires about fingerprint-based sign-in for Firefox. [Symptoms] Requests biometric login support. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Other.",
+"category": "Security / Privacy",
+"problem_type": "Other",
+"symptoms": ["Fingerprint sign-in inquiry"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539532",
+"title": "WHY IS SEARCH BOX BIGGER? do i have to logi to use my brouser. has anythig changed?",
+"summary": "[Problem] Search box size increased after update, affecting site usability. [Symptoms] Larger search box interferes with site usage (e.g., Delta Airlines). [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] UI Defect.",
+"category": "UI / Interaction",
+"problem_type": "UI Defect",
+"symptoms": ["Search box enlarged", "Interferes with website layout"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539531",
+"title": "Misplaced Folders in Bookmarks Library",
+"summary": "[Problem] User unable to locate misplaced bookmark folders in library. [Symptoms] Cannot find specific folders even when browsing sublevels; requests search or recovery method. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot find misplaced bookmark folders", "No search function in bookmarks library"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539441",
+"title": "About : config",
+"summary": "[Problem] User wants to access Firefox configuration editor. [Symptoms] Inquiry about entering about:config page. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Other.",
+"category": "UI / Interaction",
+"problem_type": "Other",
+"symptoms": ["Wants to access about:config settings page"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539525",
+"title": "Bookmarks",
+"summary": "[Problem] Bookmarks missing from Firefox. [Symptoms] All bookmarks gone; user cannot operate without them and threatens to switch browsers. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks missing", "Considering changing browsers"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539520",
+"title": "Firefox Updates are Not Downloading",
+"summary": "[Problem] Firefox updates fail to download and remain stuck at 0 bytes. [Symptoms] Updates 143.0.3 and 143.0.4 show 'Downloading update -- 0 bytes' indefinitely; must reinstall manually. [Environment] Windows 10 64-bit, Firefox 143.0.3–143.0.4. [Possible Category] Installation / Update. [Problem Type] Functionality Error.",
+"category": "Installation / Update",
+"problem_type": "Functionality Error",
+"symptoms": ["Update stuck at 0 bytes", "Manual reinstall required", "Occurs on recent versions 143.0.3 and 143.0.4"],
+"environment": {"os": "Windows 10 64-bit", "firefox_version": "143.0.3–143.0.4", "hardware": null}
+},
+{
+"id": "1539519",
+"title": "PIP in linux doesn't work on workspaces",
+"summary": "[Problem] Picture-in-Picture (PIP) window does not follow across workspaces in Linux. [Symptoms] PIP remains on original workspace while switching; Chromium browsers behave correctly. [Environment] Linux, Firefox 143. [Possible Category] Rendering / Display. [Problem Type] Functionality Error.",
+"category": "Rendering / Display",
+"problem_type": "Functionality Error",
+"symptoms": ["PIP window stays on one workspace", "Does not appear on other workspaces"],
+"environment": {"os": "Linux", "firefox_version": "143", "hardware": null}
+},
+{
+"id": "1539515",
+"title": "How do you eliminate password sign when opening firefox",
+"summary": "[Problem] User wants to disable password prompt when starting Firefox. [Symptoms] Firefox requests sign-in on startup; user wants auto-login or removal. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Configuration Issue.",
+"category": "Security / Privacy",
+"problem_type": "Configuration Issue",
+"symptoms": ["Password prompt appears at startup", "Wants to remove or disable sign-in"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539516",
+"title": "my old bookmarks are on Passport and won't sync with new computer",
+"summary": "[Problem] Old bookmarks stored under previous account not syncing to new computer. [Symptoms] Cannot access bookmarks saved under older profile or 'Passport' account. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Old bookmarks missing", "Sync not working on new computer"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1535112",
+"title": "firefox keeps crashing and gives me the message attached",
+"summary": "[Problem] Firefox crashes daily with error message. [Symptoms] Frequent browser crashes despite submitting crash reports; issue unresolved. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Crash.",
+"category": "Performance",
+"problem_type": "Crash",
+"symptoms": ["Frequent crashes", "Error message shown", "Crash reports uploaded but no response"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539513",
+"title": "keeps wanting to reinstall - won't open existing application",
+"summary": "[Problem] Firefox repeatedly prompts to reinstall instead of opening existing installation. [Symptoms] Stuck in loop between reinstall prompt and existing app selection; loses settings after each reinstall. [Environment] macOS 15.6.1 (24G90), Lapbook Pro. [Possible Category] Installation / Update. [Problem Type] Functionality Error.",
+"category": "Installation / Update",
+"problem_type": "Functionality Error",
+"symptoms": ["Reinstall loop", "Loses configuration after reinstall", "Existing installation not recognized"],
+"environment": {"os": "macOS 15.6.1", "firefox_version": "Firefox", "hardware": "Lapbook Pro"}
+},
+{
+"id": "1538268",
+"title": "Persistant Pinned Tabs - Feature Request",
+"summary": "[Problem] Pinned tabs are lost when Firefox windows close in wrong order. [Symptoms] Pinned tabs disappear; user requests persistence across sessions. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Other.",
+"category": "UI / Interaction",
+"problem_type": "Other",
+"symptoms": ["Pinned tabs lost when closing windows", "Requests permanent pinned tabs feature"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539487",
+"title": "password",
+"summary": "[Problem] Cannot enter password; redirected to password storage settings instead. [Symptoms] Password entry field inaccessible; Firefox opens password manager instructions. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Functionality Error.",
+"category": "Security / Privacy",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot input password", "Redirected to password storage info"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539488",
+"title": "2FA token generated for Firefox Account has the wrong name (email)",
+"summary": "[Problem] Two-factor authentication token shows incorrect email name. [Symptoms] 2FA app displays outdated email, though code works; old email appears during sign-in attempts. [Environment] Firefox Account. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["2FA token uses old email", "Old email still offered during sign-in"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539342",
+"title": "Browser Seach Engine - Default",
+"summary": "[Problem] Default search engine changes unexpectedly. [Symptoms] Search engine resets to Yahoo or others; may be caused by extension or external app. [Environment] Firefox. [Possible Category] Security / Privacy. [Problem Type] Configuration Issue.",
+"category": "Security / Privacy",
+"problem_type": "Configuration Issue",
+"symptoms": ["Default search engine keeps changing", "Yahoo search appears unexpectedly"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1537833",
+"title": "Unloaded tabs on startup",
+"summary": "[Problem] Firefox loads all tabs at startup, causing slowness. [Symptoms] 100+ tabs load with ads, slowing performance; user wants tabs to remain unloaded. [Environment] Windows 11, Desktop i5 CPU, 32 GB RAM. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Slow startup due to many tabs loading", "High resource usage", "Wants unloaded startup option"],
+"environment": {"os": "Windows 11", "firefox_version": "Firefox", "hardware": "Desktop i5, 32 GB RAM"}
+},
+{
+"id": "1539504",
+"title": "My location",
+"summary": "[Problem] Firefox detects incorrect user location. [Symptoms] Browser shows wrong location and user cannot change it. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Incorrect location displayed", "Unable to change location"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1524128",
+"title": "Bookmarks Tool Bar Not Syncing",
+"summary": "[Problem] Bookmarks toolbar not syncing with Firefox account. [Symptoms] Toolbar bookmarks missing after sync. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks toolbar not syncing", "Missing synced bookmarks"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539495",
+"title": "Spell check red underline",
+"summary": "[Problem] Spell check underline color not displaying properly. [Symptoms] Red squiggle line replaced by faint yellow highlight despite changing settings. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Red underline missing", "Yellow highlight appears instead", "Spell check color setting ignored"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539493",
+"title": "System crashes while watching youtube",
+"summary": "[Problem] System freezes while watching YouTube in Firefox. [Symptoms] Crashes occur 5–30 minutes into playback; other software and browsers unaffected. [Environment] Firefox, Windows. [Possible Category] Performance. [Problem Type] Crash.",
+"category": "Performance",
+"problem_type": "Crash",
+"symptoms": ["System freeze during YouTube playback", "Occurs only in Firefox"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539302",
+"title": "Scroll bar too narow",
+"summary": "[Problem] Scroll bar width too small for comfortable use. [Symptoms] User wants to make scrollbar wider via configuration editor. [Environment] Windows. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Scrollbar too narrow", "Requests wider scrollbar option"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539464",
+"title": "I am not receiving emails in my Yahoo mail on Firefox browser",
+"summary": "[Problem] Yahoo Mail not receiving new emails in Firefox. [Symptoms] Yahoo inbox not updating despite browser being current. [Environment] Firefox. [Possible Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Yahoo Mail not receiving messages", "Other browsers likely unaffected"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539481",
+"title": "syncing",
+"summary": "[Problem] New computer synced old Firefox data instead of latest. [Symptoms] Latest bookmarks and data missing; user asks how to retrieve most recent sync. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["New computer synced outdated data", "Recent bookmarks missing"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539483",
+"title": "please update Firefox version on this computer",
+"summary": "[Problem] User needs newer Firefox version for website compatibility. [Symptoms] Using Firefox 115 ESR on Windows 7, which cannot upgrade beyond this version. [Environment] Windows 7, Firefox 115 ESR. [Possible Category] Installation / Update. [Problem Type] Configuration Issue.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Stuck on Firefox 115 ESR", "Cannot update due to Windows 7 limitation"],
+"environment": {"os": "Windows 7", "firefox_version": "115 ESR", "hardware": null}
+},
+{
+"id": "1538949",
+"title": "My passwords are apparently lost today after updating Firefox",
+"summary": "[Problem] Passwords disappeared after Firefox update. [Symptoms] Saved passwords lost post-update; user asks if recovery possible. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Passwords missing after update", "Lost saved credentials"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1538823",
+"title": "Default to open links in a new Tab Does Not Work",
+"summary": "[Problem] Links clicked on websites overwrite the current tab instead of opening in a new one. [Symptoms] Firefox ignores 'Open links in tabs instead of new windows' and related settings; user forced to use Ctrl+click workaround. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Links overwrite current tab", "New tab setting not respected", "Ctrl+click required to open in new tab"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539419",
+"title": "I get bad input delay in certain websites",
+"summary": "[Problem] Input lag occurs on specific websites in Firefox. [Symptoms] Input delay only on Google Translate; other sites and Google products unaffected. [Environment] Firefox. [Possible Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Input delay on Google Translate", "Other websites unaffected"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539426",
+"title": "Delete cookies from specified time period",
+"summary": "[Problem] Firefox lacks option to delete cookies from a custom time range. [Symptoms] User can only delete from fixed options like last hour or all history; wants to remove past week's cookies only. [Environment] Windows, Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot delete cookies from specific period", "Only preset time ranges available"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539472",
+"title": "Downloaded Firefox for me andnow cannot find my wife's Firefox account",
+"summary": "[Problem] User cannot locate or access spouse’s Firefox account after installing new instance. [Symptoms] Unable to switch or sign in to spouse’s Firefox account. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot access spouse’s Firefox account", "Unsure how to switch user profile"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1538472",
+"title": "Bookmarks import still messed up, now with double nesting and duplicate/triplicate directories?",
+"summary": "[Problem] Imported bookmarks contain duplicates and nested folders causing sync confusion. [Symptoms] Double or triple folder nesting, inconsistent sync between desktop and phone. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Duplicate bookmark folders", "Bookmark sync confusion", "Nested directories after import"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539445",
+"title": "reset passwords",
+"summary": "[Problem] User cannot recall old Firefox account password and cannot reset it. [Symptoms] Repeated password prompts; wants new account linked with fingerprint authentication on Mac M4. [Environment] macOS (M4 chip), Firefox. [Possible Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Forgot Firefox account password", "Wants fingerprint login", "Repeated password prompts"],
+"environment": {"os": "macOS (M4 chip)", "firefox_version": "Firefox", "hardware": "Mac Mini"}
+},
+{
+"id": "1539258",
+"title": "Remove keyboard shortcuts from Context Menus",
+"summary": "[Problem] Keyboard shortcut labels clutter context menus. [Symptoms] User wants to remove shortcut text like Ctrl+Shift+O from menus; older CSS code no longer works after update. [Environment] Firefox 143. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Keyboard shortcuts visible in menus", "Old CSS customization broken after update"],
+"environment": {"os": "Firefox", "firefox_version": "143", "hardware": null}
+},
+{
+"id": "1539444",
+"title": "I cant email links anymore",
+"summary": "[Problem] Email link option fails with missing app association error. [Symptoms] 'File → Email link' shows error about no associated application; mailto set to Thunderbird; refresh did not help. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot email links", "Missing app association error", "Thunderbird mailto configured"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539438",
+"title": "Help! Why aren't favicons showing up in my bookmarks? Почему не отображаются favicon в закладках?",
+"summary": "[Problem] Favicons disappear from bookmarks after moving them to folders. [Symptoms] Icons visible initially, then missing when bookmarks moved; reproducible across folders. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Favicons missing in bookmarks folders", "Icons disappear after moving bookmarks"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539431",
+"title": "how do I clear the cache",
+"summary": "[Problem] User needs to clear Firefox cache to fix Microsoft OneDrive issue. [Symptoms] Unable to locate cache clearing option; OneDrive not working in Firefox. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot find clear cache option", "OneDrive malfunctioning in Firefox"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539428",
+"title": "C:\\Programa files\\Mozilla Firefox\\full.dll",
+"summary": "[Problem] Firefox fails to open on PC due to DLL issue. [Symptoms] Application cannot start; possible missing or corrupted full.dll file. [Environment] Windows. [Possible Category] Installation / Update. [Problem Type] Crash.",
+"category": "Installation / Update",
+"problem_type": "Crash",
+"symptoms": ["Firefox will not open", "DLL file problem"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539285",
+"title": "Sync Nightmare",
+"summary": "[Problem] Chrome data imported unintentionally and synced to Firefox account. [Symptoms] Chrome data auto-imported; cannot delete synced data; fears syncing old computer may re-import data. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Unwanted Chrome data synced", "Unable to delete synced data", "Sync contamination concern"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539407",
+"title": "Weather widget",
+"summary": "[Problem] Weather widget missing major cities and defaults to incorrect location. [Symptoms] Widget shows Singapore; cannot select cities like Dhaka or New York despite availability in AccuWeather. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Missing major cities in weather widget", "Defaulted to wrong location"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539409",
+"title": "Firefox Weather in New Tab Page",
+"summary": "[Problem] Firefox weather forecast displays wrong region (Germany). [Symptoms] New tab weather shows Frankfurt instead of local city; cannot select non-German cities. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Weather widget stuck on German cities", "Wrong location displayed"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539370",
+"title": "Google Drive",
+"summary": "[Problem] Firefox no longer allows drag-and-drop file uploads to Google Drive. [Symptoms] Previously functional drag-and-drop now blocked. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot drag and drop files into Google Drive", "Feature worked before"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539416",
+"title": "Password not excepted",
+"summary": "[Problem] Firefox does not accept user password. [Symptoms] Login attempts rejected without reason; user unsure of cause. [Environment] Firefox. [Possible Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Password rejected", "Unable to log in"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539184",
+"title": "My location according to AccuWeather says I'm in Portland Oregon, but I'm not even in the U.S.",
+"summary": "[Problem] Firefox homepage weather shows wrong location. [Symptoms] Location detected as Portland, Oregon; user outside U.S.; cannot change to correct city; no VPN in use. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Weather widget shows wrong country", "Cannot change location manually"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539393",
+"title": "TWo Part Authentication of Account",
+"summary": "[Problem] Scanning Firefox 2FA QR code leads to scam or inappropriate site. [Symptoms] 2FA QR opens unrelated or malicious pages; potential phishing issue. [Environment] Firefox Account. [Possible Category] Security / Privacy. [Problem Type] Security Issue.",
+"category": "Security / Privacy",
+"problem_type": "Other",
+"symptoms": ["2FA QR redirects to scam site", "Security risk during authentication"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539401",
+"title": "firefox",
+"summary": "[Problem] User needs help setting up Firefox on new laptop. [Symptoms] Unsure how to install and configure browser. [Environment] Firefox. [Possible Category] Installation / Update. [Problem Type] Other.",
+"category": "Installation / Update",
+"problem_type": "Other",
+"symptoms": ["Needs assistance installing Firefox on new laptop"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": "Laptop"}
+},
+{
+"id": "1539413",
+"title": "how to make visited site the first suggestion even if its on the same site?",
+"summary": "[Problem] Firefox autocomplete does not prioritize most visited URLs from same domain. [Symptoms] Typing a site name suggests homepage instead of specific frequently visited page. [Environment] Firefox. [Possible Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Autocomplete not prioritizing most visited page", "Wants Chrome-like URL suggestion behavior"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539381",
+"title": "Please tell me how to make scroll bar wider so it is easier to point at with cursor arrow?",
+"summary": "[Problem] User wants to make the scroll bar wider but is confused by prior add-on instructions. [Symptoms] Installed unknown add-on without guidance; still unable to widen scrollbar; requests detailed beginner-level steps. [Environment] Firefox. [Category] UI / Interaction. [Problem Type] Configuration Issue.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Scrollbar too narrow", "Unclear add-on usage", "Needs detailed instructions"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539284",
+"title": "DNS over HTTPS : Status Active with Provider Cloudflare",
+"summary": "[Problem] Inconsistent DNS-over-HTTPS behavior between systems causes connection errors. [Symptoms] Some systems can access a URL, others fail with PR_END_OF_FILE_ERROR; difference traced to DoH enabled (Cloudflare) vs disabled. [Environment] Windows network, Firefox. [Category] Network / Connection. [Problem Type] Configuration Issue.",
+"category": "Network / Connection",
+"problem_type": "Configuration Issue",
+"symptoms": ["PR_END_OF_FILE_ERROR", "DoH active on one system, off on another", "Same Firefox version but different DNS behavior"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "Multiple systems on same network"}
+},
+{
+"id": "1539379",
+"title": "two accounts and i need space in my computer",
+"summary": "[Problem] Duplicate Firefox accounts take storage space; user unsure how to remove safely. [Symptoms] Two accounts created by mistake; wants to delete one without affecting the other or sync data. [Environment] Firefox. [Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Duplicate Firefox accounts", "Concern about data loss", "Wants to free up space"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539294",
+"title": "browser not suport old windows version.",
+"summary": "[Problem] Firefox no longer supports older Windows versions like XP and 7. [Symptoms] Requests option to download old Firefox versions for legacy systems. [Environment] Windows XP/7. [Category] Installation / Update. [Problem Type] Compatibility Issue.",
+"category": "Installation / Update",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Old Windows versions unsupported", "Needs Firefox version for XP/7"],
+"environment": {"os": "Windows XP/7", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539364",
+"title": "syncing old and new computer bookmarks and passwords in firefox",
+"summary": "[Problem] Bookmarks and passwords not syncing between old and new computers. [Symptoms] Both devices logged into same Firefox account; sync enabled but bookmarks missing on new machine. [Environment] Windows (assumed), Firefox. [Category] Account / Sync. [Problem Type] Functionality Error.",
+"category": "Account / Sync",
+"problem_type": "Functionality Error",
+"symptoms": ["Bookmarks not appearing on new computer", "Passwords not synced"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "Two computers"}
+},
+{
+"id": "1539360",
+"title": "Playing games on YouTube is always choppy",
+"summary": "[Problem] YouTube playback is choppy when gaming. [Symptoms] Video lag or stutter during gameplay; possible bandwidth or resource contention. [Environment] Firefox. [Category] Performance. [Problem Type] Performance Issue.",
+"category": "Performance",
+"problem_type": "Performance Issue",
+"symptoms": ["Choppy YouTube playback", "Occurs during gaming"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539251",
+"title": "Red dotted lines when searching Google in Firefox (not spell check)",
+"summary": "[Problem] Red dotted lines appear when typing in Google search despite spell check being disabled. [Symptoms] Red dotted line not related to spell check; user wants to hide or disable it via settings or about:config. [Environment] Firefox. [Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Red dotted lines appear in Google search bar", "Not related to spell check", "Cannot disable in settings"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539255",
+"title": "Hot links in Thunderbird are not opening in Firefox",
+"summary": "[Problem] Clicking email links in Thunderbird fails to open properly in Firefox. [Symptoms] Links open blank Firefox tab or hang; works when VPN disabled; happens even in Troubleshoot Mode. [Environment] Windows (assumed), Thunderbird + Firefox, Mozilla VPN. [Category] Network / Connection. [Problem Type] Functionality Error.",
+"category": "Network / Connection",
+"problem_type": "Functionality Error",
+"symptoms": ["Links from Thunderbird not opening", "Issue tied to Mozilla VPN", "Occurs even in Troubleshoot Mode"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539254",
+"title": "How to completely remove Okta authentication automatic redirects from Firefox",
+"summary": "[Problem] Persistent Okta login redirection despite clearing all data. [Symptoms] Former institution’s Okta still intercepts academic logins; clearing cookies and cache ineffective; occurs only in normal Firefox mode. [Environment] macOS (MacBook Air M1), Firefox 143.0.3. [Category] Security / Privacy. [Problem Type] Configuration Issue.",
+"category": "Security / Privacy",
+"problem_type": "Configuration Issue",
+"symptoms": ["Automatic redirect to old Okta login", "Clearing cookies and cache ineffective", "Problem not present in private mode"],
+"environment": {"os": "macOS Big Sur (M1)", "firefox_version": "143.0.3", "hardware": "MacBook Air 2020"}
+},
+{
+"id": "1539076",
+"title": "Mozilla Connect navigation issue",
+"summary": "[Problem] Users cannot easily find the 'My Unmoderated Items' page in Mozilla Connect. [Symptoms] Page accessible only via direct link; missing from menus and account navigation. [Environment] Firefox website interface. [Category] Website / Forum. [Problem Type] Usability Issue.",
+"category": "Website / Forum",
+"problem_type": "Usability Issue",
+"symptoms": ["Cannot locate unmoderated items page", "Navigation link missing"],
+"environment": {"os": "Web", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539175",
+"title": "losing saved login passwords",
+"summary": "[Problem] Saved Firefox passwords disappear after installing Microsoft PC Manager. [Symptoms] Passwords deleted on restart; possibly caused by PC Manager cleaning files. [Environment] Windows 10, Firefox. [Category] Account / Sync. [Problem Type] Compatibility Issue.",
+"category": "Account / Sync",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Passwords lost after reboot", "Possible conflict with Microsoft PC Manager"],
+"environment": {"os": "Windows 10", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539356",
+"title": "Closed tabs",
+"summary": "[Problem] All tabs closed and session not restored after Firefox update. [Symptoms] Tabs not reappearing despite normally auto-restoring; update likely reset session data. [Environment] Firefox latest version. [Category] UI / Interaction. [Problem Type] Functionality Error.",
+"category": "UI / Interaction",
+"problem_type": "Functionality Error",
+"symptoms": ["Tabs closed after update", "Session not restored"],
+"environment": {"os": "Firefox", "firefox_version": "143.x", "hardware": null}
+},
+{
+"id": "1539141",
+"title": "Dock Prefs.",
+"summary": "[Problem] Wants to hide Firefox dock icons when multiple pages open on macOS. [Symptoms] Too many page previews in dock; desires toggle option in settings. [Environment] macOS 15.7.1 on early Mac Mini. [Category] UI / Interaction. [Problem Type] Feature Request.",
+"category": "UI / Interaction",
+"problem_type": "Feature Request",
+"symptoms": ["Too many dock icons", "No option to disable tab previews in dock"],
+"environment": {"os": "macOS 15.7.1", "firefox_version": "Firefox", "hardware": "Mac Mini"}
+},
+{
+"id": "1539354",
+"title": "problem microphone",
+"summary": "[Problem] Microphone not working during Google Voice calls in Firefox. [Symptoms] Caller cannot be heard; microphone permissions possibly blocked. [Environment] Firefox. [Category] Media / Audio. [Problem Type] Functionality Error.",
+"category": "Media / Audio",
+"problem_type": "Functionality Error",
+"symptoms": ["Microphone not detected in Google Voice", "Cannot be heard on calls"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539320",
+"title": "a website is requesting a new version of PHP",
+"summary": "[Problem] User confused about PHP version message from website. [Symptoms] Website rejects login citing outdated PHP; user unsure if Firefox includes PHP or needs manual installation. [Environment] macOS Big Sur 11.7.10, Firefox 143.0.4. [Category] Website / Compatibility. [Problem Type] User Misunderstanding.",
+"category": "Website / Compatibility",
+"problem_type": "Other",
+"symptoms": ["Site requests PHP update", "Thinks PHP tied to browser"],
+"environment": {"os": "macOS Big Sur 11.7.10", "firefox_version": "143.0.4", "hardware": "MacBook Air"}
+},
+{
+"id": "1539288",
+"title": "connecting with verizon to verify my account",
+"summary": "[Problem] Unable to verify Verizon account when using Firefox. [Symptoms] Verification works in Chrome/Edge but fails in Firefox. [Environment] Firefox. [Category] Website / Compatibility. [Problem Type] Functionality Error.",
+"category": "Website / Compatibility",
+"problem_type": "Functionality Error",
+"symptoms": ["Verizon verification fails in Firefox", "Works in Chrome and Edge"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539276",
+"title": "Passwords",
+"summary": "[Problem] Wants to save username but not password for websites. [Symptoms] Existing guidance outdated; user needs current method for username-only saving. [Environment] Firefox. [Category] Account / Sync. [Problem Type] Configuration Issue.",
+"category": "Account / Sync",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot save username without password", "Outdated help documentation"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539266",
+"title": "unwanted 'bandify' ad keeps popping up in firefox",
+"summary": "[Problem] Repeated unwanted 'bandify' advertisement pop-ups. [Symptoms] Pop-up ad persists; likely adware or malicious extension. [Environment] Firefox. [Category] Security / Privacy. [Problem Type] Adware Infection.",
+"category": "Security / Privacy",
+"problem_type": "Other",
+"symptoms": ["Persistent bandify ad", "Pop-up intrusion"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539263",
+"title": "My Firefox Desktop app disappeared since yesterday, and no longer exists",
+"summary": "[Problem] Firefox app deleted after Windows update; user lost all settings and passwords. [Symptoms] Firefox missing from PC; reinstallation recovers no data; sync failed. [Environment] Windows, post-update. [Category] Installation / Update. [Problem Type] Data Loss.",
+"category": "Installation / Update",
+"problem_type": "Crash",
+"symptoms": ["Firefox uninstalled after update", "Lost passwords and settings"],
+"environment": {"os": "Windows", "firefox_version": "143.x", "hardware": "PC"}
+},
+{
+"id": "1539235",
+"title": "Firefox will not scroll on certain web pages",
+"summary": "[Problem] Certain pages do not scroll or show scrollbar in Firefox. [Symptoms] Example site lv.com fails to scroll; possible GDPR consent overlay blocked by add-on. [Environment] Windows 10, Firefox 143.0.3 (64-bit). [Category] UI / Interaction. [Problem Type] Compatibility Issue.",
+"category": "UI / Interaction",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Scroll bar missing on some websites", "Add-on may block GDPR popup"],
+"environment": {"os": "Windows 10", "firefox_version": "143.0.3 (64-bit)", "hardware": "PC"}
+},
+{
+"id": "1539232",
+"title": "Change language",
+"summary": "[Problem] Cannot change Firefox interface language to French on macOS 10.9.5. [Symptoms] Using Firefox 78.0.2 (64-bit) on MacBook Pro; language change option unavailable or ineffective. [Environment] macOS 10.9.5, Firefox 78.0.2 (legacy). [Category] UI / Localization. [Problem Type] Compatibility Issue.",
+"category": "UI / Localization",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Cannot switch Firefox language", "Language pack missing or unsupported version"],
+"environment": {"os": "macOS 10.9.5", "firefox_version": "78.0.2 (64-bit)", "hardware": "MacBook Pro"}
+},
+{
+"id": "1539229",
+"title": "how to restore my all bookmarks and return to the old version Mozilla using Firefox",
+"summary": "[Problem] Wants to restore old bookmarks and downgrade to a previous Firefox version. [Symptoms] Missing bookmarks after update; seeks rollback. [Environment] Firefox (unspecified version). [Category] Bookmarks / Data. [Problem Type] Data Loss.",
+"category": "Bookmarks / Data",
+"problem_type": "Data Loss",
+"symptoms": ["Lost bookmarks after update", "Wants to revert to previous version"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539220",
+"title": "your service is blocked by Microsoft edge i have down loaded 20 times try to install always removed",
+"summary": "[Problem] Unable to install Firefox due to being blocked or removed by Microsoft Edge/Windows. [Symptoms] Firefox installation repeatedly deleted or blocked after Windows reinstall. [Environment] Windows laptop. [Category] Installation / Update. [Problem Type] Compatibility Issue.",
+"category": "Installation / Update",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Firefox blocked or deleted", "Microsoft Edge interference", "Repeated failed installs"],
+"environment": {"os": "Windows", "firefox_version": null, "hardware": "Laptop"}
+},
+{
+"id": "1538365",
+"title": "SOME pages consistently taking 30+ seconds to load",
+"summary": "[Problem] Certain websites load very slowly (30+ seconds) while others are normal. [Symptoms] Persistent slowness only on specific sites; Edge loads fine. [Environment] Windows 10, Firefox. [Category] Performance / Network. [Problem Type] Performance Issue.",
+"category": "Performance / Network",
+"problem_type": "Performance Issue",
+"symptoms": ["Slow website loading", "Normal performance in other browsers"],
+"environment": {"os": "Windows 10", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539350",
+"title": "Firefox",
+"summary": "[Problem] Password manager (1Password) warns Firefox version too old. [Symptoms] Current Firefox version unsupported by 1Password; needs update. [Environment] Firefox outdated version. [Category] Installation / Update. [Problem Type] Compatibility Issue.",
+"category": "Installation / Update",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Old Firefox version", "Extension requires newer release"],
+"environment": {"os": "Firefox", "firefox_version": "Outdated", "hardware": null}
+},
+{
+"id": "1539346",
+"title": "enable java sCRIPT",
+"summary": "[Problem] User wants to enable JavaScript. [Symptoms] Likely disabled JavaScript; wants instructions to re-enable. [Environment] Firefox (Spanish interface). [Category] Configuration / Settings. [Problem Type] User Misconfiguration.",
+"category": "Configuration / Settings",
+"problem_type": "Configuration Issue",
+"symptoms": ["JavaScript disabled", "Needs enabling steps"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539339",
+"title": "How to find and change firefox firewall in my setting",
+"summary": "[Problem] Can't locate or adjust Firefox firewall settings. [Symptoms] Error message: 'Firefox has permission to access the web (might be connected but behind a firewall)'; user unsure where to configure. [Environment] Windows (recently working). [Category] Network / Connection. [Problem Type] Configuration Issue.",
+"category": "Network / Connection",
+"problem_type": "Configuration Issue",
+"symptoms": ["Possible firewall block", "Cannot find firewall settings", "Connection issue appeared suddenly"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539340",
+"title": "forgot password",
+"summary": "[Problem] Forgot Firefox account password. [Symptoms] Unable to log into Firefox account; needs password reset. [Environment] Firefox account. [Category] Account / Sync. [Problem Type] Authentication Issue.",
+"category": "Account / Sync",
+"problem_type": "Authentication Issue",
+"symptoms": ["Forgot Firefox password", "Needs password recovery"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539002",
+"title": "updating version and browser",
+"summary": "[Problem] Using outdated Firefox 88.0; needs help updating to current version. [Symptoms] User elderly and non-technical; requests simple step-by-step update guide. [Environment] Windows (unspecified). [Category] Installation / Update. [Problem Type] Outdated Version.",
+"category": "Installation / Update",
+"problem_type": "Configuration Issue",
+"symptoms": ["Outdated Firefox version 88.0", "Needs help updating browser"],
+"environment": {"os": "Windows", "firefox_version": "88.0", "hardware": "PC"}
+},
+{
+"id": "1539286",
+"title": "Fingerprinting with version 143",
+"summary": "[Problem] Fingerprinting protection not effective despite using Firefox 143 on Linux. [Symptoms] EFF test shows unique fingerprint; user wonders if settings need adjustment. [Environment] Linux, Firefox 143. [Category] Security / Privacy. [Problem Type] Functionality Concern.",
+"category": "Security / Privacy",
+"problem_type": "Functionality Error",
+"symptoms": ["Fingerprinting still detected", "Looking for privacy parameter to enable"],
+"environment": {"os": "Linux", "firefox_version": "143", "hardware": "PC"}
+},
+{
+"id": "1539261",
+"title": "impossibilité d'ouvrir Firefox",
+"summary": "[Problem] Firefox won't open due to missing or inaccessible profile. [Symptoms] Error: 'Profil Manquant – Le profil Firefox ne peut être chargé.' [Environment] macOS, longtime Firefox user. [Category] Installation / Profile. [Problem Type] Profile Corruption.",
+"category": "Installation / Profile",
+"problem_type": "Crash",
+"symptoms": ["Profile missing error", "Cannot launch Firefox"],
+"environment": {"os": "macOS", "firefox_version": "Firefox", "hardware": "Mac"}
+},
+{
+"id": "1508536",
+"title": "why cant I rate an add-ons ?",
+"summary": "[Problem] Unable to review or rate Firefox add-ons. [Symptoms] Missing 'Click to rate' option on add-on pages. [Environment] Firefox add-ons site. [Category] Website / Forum. [Problem Type] Functionality Error.",
+"category": "Website / Forum",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot rate or review extensions", "Rating UI missing"],
+"environment": {"os": "Web", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539158",
+"title": "I get an error streeming CTV news site",
+"summary": "[Problem] CTV News videos no longer stream in Firefox. [Symptoms] Streaming previously worked; now fails unexpectedly; likely codec or permission issue. [Environment] Firefox browser. [Category] Media / Streaming. [Problem Type] Compatibility Issue.",
+"category": "Media / Streaming",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Cannot stream from CTV News", "Previously worked fine"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539317",
+"title": "Incessant Crashes",
+"summary": "[Problem] Firefox freezes and crashes multiple times daily. [Symptoms] White bar and unresponsive state; requires force-close; persists despite disabling add-ons; temporary fix after reboot. [Environment] Windows PC. [Category] Stability / Performance. [Problem Type] Crash.",
+"category": "Stability / Performance",
+"problem_type": "Crash",
+"symptoms": ["Frequent freezing", "Crash popup with 'Close or Wait'", "Temporary relief after reboot"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539230",
+"title": "restore old version with all my bookmarks I usually use Google for my homepage for questions about anything",
+"summary": "[Problem] Wants to restore older Firefox version with previous bookmarks and Google homepage. [Symptoms] Lost bookmarks after update; homepage preference changed. [Environment] Firefox. [Category] Bookmarks / Data. [Problem Type] Data Loss.",
+"category": "Bookmarks / Data",
+"problem_type": "Data Loss",
+"symptoms": ["Lost bookmarks", "Homepage reset", "Wants rollback to old Firefox version"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1536304",
+"title": "Sad about changes that don't allow my custom home page",
+"summary": "[Problem] Cannot set custom homepage for new tabs in latest Firefox. [Symptoms] Option restricted to 'Firefox' or 'Blank Page'; user frustrated about extra step to reach preferred homepage. [Environment] Firefox (new version). [Category] UI / Interaction. [Problem Type] Feature Removal.",
+"category": "UI / Interaction",
+"problem_type": "Configuration Issue",
+"symptoms": ["Cannot set custom homepage for new tabs", "Frustration with removed option"],
+"environment": {"os": "Firefox", "firefox_version": "New version", "hardware": null}
+},
+{
+"id": "1539292",
+"title": "Menu Bar Auto-Unhide Behavior in Full Screen Mode",
+"summary": "[Problem] Menu bar auto-unhides in fullscreen and disrupts Citrix display resizing. [Symptoms] Menu bar appears/disappears causing window size flicker; user wants to disable auto-unhide or use shortcut toggle. [Environment] Windows (Citrix Lite remote desktop). [Category] UI / Interaction. [Problem Type] Usability Issue.",
+"category": "UI / Interaction",
+"problem_type": "Usability Issue",
+"symptoms": ["Menu bar auto-unhides in fullscreen", "Causes resizing issues with Citrix"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1530850",
+"title": "Firefox Issues With Facebook",
+"summary": "[Problem] Facebook performs poorly in Firefox (slow groups and chats). [Symptoms] Slow loading of groups, notifications, shimmering panels; fine in Edge. [Environment] Firefox, Windows. [Category] Website / Compatibility. [Problem Type] Performance Issue.",
+"category": "Website / Compatibility",
+"problem_type": "Performance Issue",
+"symptoms": ["Slow Facebook loading", "Normal performance in Edge"],
+"environment": {"os": "Windows", "firefox_version": "Firefox", "hardware": "PC"}
+},
+{
+"id": "1539306",
+"title": "default search engine",
+"summary": "[Problem] Firefox keeps switching to Bing despite Google set as default. [Symptoms] Default search resets to Bing automatically; likely hijacked by extension or policy. [Environment] Firefox. [Category] Search / Settings. [Problem Type] Configuration Issue.",
+"category": "Search / Settings",
+"problem_type": "Configuration Issue",
+"symptoms": ["Default search keeps changing to Bing", "Google selected but ignored"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539309",
+"title": "I don't want Google on my screen to search.",
+"summary": "[Problem] Wants to remove Google search box from start screen. [Symptoms] Dislikes Google as default search provider; wants to disable its presence entirely. [Environment] Firefox. [Category] Search / Settings. [Problem Type] Configuration Issue.",
+"category": "Search / Settings",
+"problem_type": "Configuration Issue",
+"symptoms": ["Wants to remove Google search bar", "Does not want Google as default engine"],
+"environment": {"os": "Firefox", "firefox_version": "Firefox", "hardware": null}
+},
+{
+"id": "1539308",
+"title": "How to enable java script",
+"summary": "[Problem] User wants to enable JavaScript. [Symptoms] Browser features or pages may be blocked due to JavaScript being disabled. [Environment] Windows or Mac, unspecified version. [Category] Configuration / Settings. [Problem Type] User Misconfiguration.",
+"category": "Configuration / Settings",
+"problem_type": "Configuration Issue",
+"symptoms": ["JavaScript disabled", "Websites not loading properly"],
+"environment": {"os": "Unknown", "firefox_version": null, "hardware": "PC"}
+},
+{
+"id": "1512400",
+"title": "Duplicate downloads",
+"summary": "[Problem] Firefox saves duplicate files in 'Downloads' folder even when 'Always Ask' is enabled. [Symptoms] Files saved twice—one in user-chosen location and one in default Downloads folder. [Environment] Windows 11, Firefox 138.0.3 (64-bit). [Category] Downloads / File Handling. [Problem Type] Configuration Issue.",
+"category": "Downloads / File Handling",
+"problem_type": "Configuration Issue",
+"symptoms": ["Duplicate files in Downloads", "Download location setting ignored"],
+"environment": {"os": "Windows 11", "firefox_version": "138.0.3 (64-bit)", "hardware": "PC"}
+},
+{
+"id": "1539293",
+"title": "Solution Found Firefox, facebook, marketplace, openoffice",
+"summary": "[Problem] Microsoft Copilot background service interferes with Firefox and other apps. [Symptoms] Facebook, Marketplace, OpenOffice, and Firefox malfunction until Copilot disabled. [Environment] Windows 11, Copilot active. [Category] Compatibility / System Integration. [Problem Type] Compatibility Issue.",
+"category": "Compatibility / System Integration",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Firefox and other apps not working", "Resolved by disabling Copilot"],
+"environment": {"os": "Windows 11", "firefox_version": null, "hardware": "PC"}
+},
+{
+"id": "1538501",
+"title": "Why does Firefox use so much RAM compared to other browsers?",
+"summary": "[Problem] Firefox consumes excessive memory compared to Chrome or Edge. [Symptoms] High RAM usage with multiple tabs open; causes lag or slow switching. [Environment] Windows PC. [Category] Performance / Memory. [Problem Type] Performance Issue.",
+"category": "Performance / Memory",
+"problem_type": "Performance Issue",
+"symptoms": ["High RAM usage", "System slowdown", "Tab switching lag"],
+"environment": {"os": "Windows", "firefox_version": "Unknown", "hardware": "PC"}
+},
+{
+"id": "1539289",
+"title": "autocomplete predictions when doing a search",
+"summary": "[Problem] Google search predictions no longer appear in Firefox. [Symptoms] Missing autocomplete suggestions during search typing. [Environment] Firefox, Google Search. [Category] Search / UI. [Problem Type] Functionality Error.",
+"category": "Search / UI",
+"problem_type": "Functionality Error",
+"symptoms": ["Missing autocomplete suggestions", "No search predictions in Google"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539099",
+"title": "Delete passwords for an Old email address",
+"summary": "[Problem] Wants to remove all stored passwords associated with an obsolete email. [Symptoms] Old email credentials still stored in Firefox Password Manager. [Environment] Windows or Mac. [Category] Passwords / Data Management. [Problem Type] Configuration Issue.",
+"category": "Passwords / Data Management",
+"problem_type": "Configuration Issue",
+"symptoms": ["Old email still in password manager", "Wants to delete all entries tied to old email"],
+"environment": {"os": "Unknown", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539170",
+"title": "The latest Firefox update deleted my saved passwords. How to I get them back?",
+"summary": "[Problem] Lost all saved passwords after latest Firefox update. [Symptoms] Passwords missing post-update on Windows 11. [Environment] Windows 11, latest Firefox. [Category] Passwords / Sync. [Problem Type] Data Loss.",
+"category": "Passwords / Sync",
+"problem_type": "Data Loss",
+"symptoms": ["Lost saved passwords", "After update"],
+"environment": {"os": "Windows 11", "firefox_version": "Latest", "hardware": "PC"}
+},
+{
+"id": "1512380",
+"title": "printer communication problem",
+"summary": "[Problem] Epson ET-2400 printer not working on Linux Mint. [Symptoms] Firefox unable to communicate with printer; missing driver/software. [Environment] Linux Mint laptop. [Category] Printing / Integration. [Problem Type] Compatibility Issue.",
+"category": "Printing / Integration",
+"problem_type": "Compatibility Issue",
+"symptoms": ["Cannot print from Firefox", "Driver for Epson ET-2400 missing"],
+"environment": {"os": "Linux Mint", "firefox_version": null, "hardware": "Laptop"}
+},
+{
+"id": "1517542",
+"title": "support for Mozilla Firefox",
+"summary": "[Problem] User confused about Firefox support status after receiving message from AVG promotion. [Symptoms] Mixed messages about Firefox support continuation. [Environment] Windows PC. [Category] Communication / Support. [Problem Type] User Confusion.",
+"category": "Communication / Support",
+"problem_type": "Configuration Issue",
+"symptoms": ["Received unsupported notice", "Confusion about AVG promotion and Firefox support"],
+"environment": {"os": "Windows", "firefox_version": null, "hardware": "PC"}
+},
+{
+"id": "1539264",
+"title": "0patch compatibility",
+"summary": "[Problem] User asks if Firefox will remain compatible with 0patch after Windows 10 support ends. [Symptoms] Seeks reassurance for continued browser operation with third-party patching. [Environment] Windows 10 desktop. [Category] Compatibility / Security. [Problem Type] Compatibility Inquiry.",
+"category": "Compatibility / Security",
+"problem_type": "Compatibility Inquiry",
+"symptoms": ["Concern about Firefox with 0patch", "Windows 10 support ending"],
+"environment": {"os": "Windows 10", "firefox_version": null, "hardware": "Desktop"}
+},
+{
+"id": "1539247",
+"title": "Can not update location in weather (desktop, main page)",
+"summary": "[Problem] Weather widget on new tab page stuck on wrong city. [Symptoms] Unable to change location (search does nothing); affects multiple devices. [Environment] Windows 10 and 11, Firefox 143.0.1 (64-bit). [Category] Homepage / Widgets. [Problem Type] Functionality Error.",
+"category": "Homepage / Widgets",
+"problem_type": "Functionality Error",
+"symptoms": ["Weather widget stuck on wrong city", "Change location input not responding"],
+"environment": {"os": "Windows 10/11", "firefox_version": "143.0.1 (64-bit)", "hardware": "PC and Laptop"}
+},
+{
+"id": "1539262",
+"title": "Capturing audio streams",
+"summary": "[Problem] User wants access to raw audio data from streaming before decoding. [Symptoms] Unable to capture pre-decoded stream from Firefox audio module. [Environment] Firefox, YouTube. [Category] Media / Development. [Problem Type] Feature Request.",
+"category": "Media / Development",
+"problem_type": "Feature Request",
+"symptoms": ["Cannot access raw audio data", "Wants to extract codec and bitrate info"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1538443",
+"title": "When I search for Google images on Firefox, the \"See more\" button appears.",
+"summary": "[Problem] Obstructive 'See more' button appears in Google Images. [Symptoms] 'See more' overlay covers image results; not seen in Edge or Chrome. [Environment] Firefox. [Category] Website / Compatibility. [Problem Type] UI Display Issue.",
+"category": "Website / Compatibility",
+"problem_type": "UI Display Issue",
+"symptoms": ["'See more' button blocks content", "Normal in other browsers"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539244",
+"title": "Extension Creator Contact Question(s)",
+"summary": "[Problem] Wants to contact developer of specific Firefox extension (600% Sound Volume). [Symptoms] Unable to find contact info for extension creator. [Environment] Firefox Add-ons site. [Category] Extensions / Support. [Problem Type] User Inquiry.",
+"category": "Extensions / Support",
+"problem_type": "User Inquiry",
+"symptoms": ["Cannot contact extension developer", "Wants to report bug in add-on"],
+"environment": {"os": "Web", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539231",
+"title": "I tried install the scripts and doesn't work.",
+"summary": "[Problem] Custom scripts failed to install or execute. [Symptoms] Unspecified installation failure; request for review. [Environment] Firefox. [Category] Extensions / Scripting. [Problem Type] Functionality Error.",
+"category": "Extensions / Scripting",
+"problem_type": "Functionality Error",
+"symptoms": ["Script installation failure", "Custom user scripts not running"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1530756",
+"title": "There is no button to log in to your account in the menu",
+"summary": "[Problem] Firefox account login button missing from menu. [Symptoms] 'Sign in' option not visible; configuration flag may be disabled. [Environment] Firefox desktop. [Category] Account / UI. [Problem Type] Configuration Issue.",
+"category": "Account / UI",
+"problem_type": "Configuration Issue",
+"symptoms": ["Missing login option in menu", "identity.fxaccounts.enabled flag disabled"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539227",
+"title": "how to remove cookies and cache",
+"summary": "[Problem] User wants to delete cookies and cache. [Symptoms] Likely unfamiliar with process; requests step-by-step guide. [Environment] Firefox. [Category] Privacy / Settings. [Problem Type] User Inquiry.",
+"category": "Privacy / Settings",
+"problem_type": "User Inquiry",
+"symptoms": ["Needs instructions to clear cookies and cache"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539179",
+"title": "comments",
+"summary": "[Problem] Unable to read or post YouTube comments in Firefox. [Symptoms] Comment section missing or unresponsive. [Environment] Firefox, YouTube. [Category] Website / Compatibility. [Problem Type] Functionality Error.",
+"category": "Website / Compatibility",
+"problem_type": "Functionality Error",
+"symptoms": ["Cannot post or read comments on YouTube"],
+"environment": {"os": "Firefox", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539211",
+"title": "Warning: Potential Security Risk Ahead",
+"summary": "[Problem] Encountered 'Potential Security Risk Ahead' SSL warning. [Symptoms] HTTPS certificate error blocking access. [Environment] Windows/Mac, Firefox. [Category] Security / Certificates. [Problem Type] Connection Error.",
+"category": "Security / Certificates",
+"problem_type": "Connection Error",
+"symptoms": ["SSL warning shown", "Website blocked due to certificate issue"],
+"environment": {"os": "Unknown", "firefox_version": null, "hardware": null}
+},
+{
+"id": "1539217",
+"title": "How to enable java script",
+"summary": "[Problem] Unable to download or fill forms due to disabled JavaScript. [Symptoms] Sites requiring JS not functioning; user needs enablement guide. [Environment] Firefox, unspecified OS. [Category] Configuration / Settings. [Problem Type] User Misconfiguration.",
+"category": "Configuration / Settings",
+"problem_type": "Configuration Issue",
+"symptoms": ["JavaScript disabled", "Cannot use download forms"],
+"environment": {"os": "Unknown", "firefox_version": null, "hardware": null}
+}
+]
+
+
+
+
+
+
+
+
+
+
+
+

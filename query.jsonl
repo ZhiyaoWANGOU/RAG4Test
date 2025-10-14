@@ -1,0 +1,769 @@
+
+  {
+    "id": 1985739,
+    "query": "firefox production certificate misconfiguration"
+  },
+  {
+    "id": 1984079,
+    "query": "firefox collection metadata multiple signatures"
+  },
+  {
+    "id": 1982433,
+    "query": "firefox remotesettings jexl caching performance"
+  },
+  {
+    "id": 1981367,
+    "query": "firefox sync ignore older changeset signature"
+  },
+  {
+    "id": 1981123,
+    "query": "firefox jexl filtering logs precision"
+  },
+  {
+    "id": 1980589,
+    "query": "firefox data sync regression older versions"
+  },
+  {
+    "id": 1980484,
+    "query": "firefox glean telemetry sampling configuration"
+  },
+  {
+    "id": 1979320,
+    "query": "firefox emptydatabaseerror nimbus mochitest"
+  },
+  {
+    "id": 1974699,
+    "query": "firefox remotesettingsclient typescript lazy handling"
+  },
+  {
+    "id": 1966937,
+    "query": "firefox remotesettings network request queue"
+  },
+  {
+    "id": 1966863,
+    "query": "firefox remotesettings redundant attachment caching"
+  },
+  {
+    "id": 1966671,
+    "query": "firefox telemetry step field download timing"
+  },
+  {
+    "id": 1966522,
+    "query": "firefox remotesettings empty response startup"
+  },
+  {
+    "id": 1965928,
+    "query": "firefox remotereftests timeout server startup"
+  },
+  {
+    "id": 1963015,
+    "query": "firefox remotesettingsclient jsdoc annotation issues"
+  },
+  {
+    "id": "1539698",
+    "query": "firefox clear browser cache data"
+  },
+  {
+    "id": "1539691",
+    "query": "firefox pocket missing saved articles"
+  },
+  {
+    "id": "1539643",
+    "query": "firefox websites not loading ebay profile"
+  },
+  {
+    "id": "1539693",
+    "query": "firefox unauthorized internet redirection"
+  },
+  {
+    "id": "1539690",
+    "query": "firefox addon button missing extensions"
+  },
+  {
+    "id": "1539611",
+    "query": "firefox facebook dm blocked by adblocker"
+  },
+  {
+    "id": "1539663",
+    "query": "firefox facebook blank page youtube video not playing"
+  },
+  {
+    "id": "1539683",
+    "query": "firefox 136 pdf viewer black screen"
+  },
+  {
+    "id": "1539686",
+    "query": "firefox sync no bookmarks passwords after reinstall"
+  },
+  {
+    "id": "1539469",
+    "query": "firefox outlook login page stuck security window"
+  },
+  {
+    "id": "1539604",
+    "query": "firefox hotmail login requires biometric authentication"
+  },
+  {
+    "id": "1539614",
+    "query": "firefox webpages and emails not loading"
+  },
+  {
+    "id": "1539626",
+    "query": "firefox gmail not loading on desktop"
+  },
+  {
+    "id": "1539627",
+    "query": "firefox youtube playback and webapp inconsistency"
+  },
+  {
+    "id": "1539628",
+    "query": "firefox websites not loading gmail amazon youtube"
+  },
+  {
+    "id": "1539629",
+    "query": "firefox websites not running need chrome"
+  },
+  {
+    "id": "1539635",
+    "query": "firefox 143 gmail messages not opening"
+  },
+  {
+    "id": "1539654",
+    "query": "firefox amazon facebook youtube not loading"
+  },
+  {
+    "id": "1539612",
+    "query": "firefox auto update disabled cannot update"
+  },
+  {
+    "id": "1539674",
+    "query": "firefox youtube video playback stuttering"
+  },
+  {
+    "id": "1539669",
+    "query": "firefox change saved password manually"
+  },
+  {
+    "id": "1539546",
+    "query": "firefox address bar text too small"
+  },
+  {
+    "id": "1539673",
+    "query": "firefox change account email address"
+  },
+  {
+    "id": "1539671",
+    "query": "firefox pinned tabs disappearing during session"
+  },
+  {
+    "id": "1539667",
+    "query": "firefox browser freezing after sync"
+  },
+  {
+    "id": "1539647",
+    "query": "firefox kijiji login 403 update required"
+  },
+  {
+    "id": "1539125",
+    "query": "firefox disable homepage automatic shortcuts"
+  },
+  {
+    "id": "1539638",
+    "query": "firefox delete forum post request"
+  },
+  {
+    "id": "1539623",
+    "query": "firefox check if browser up to date"
+  },
+  {
+    "id": "1539632",
+    "query": "firefox new tab focus address bar"
+  },
+  {
+    "id": "1539576",
+    "query": "firefox recover bookmarks passwords new drive"
+  },
+  {
+    "id": "1539619",
+    "query": "firefox remove audio icon from tabs 143"
+  },
+  {
+    "id": "1539615",
+    "query": "firefox slow speedtest download results"
+  },
+  {
+    "id": "1539606",
+    "query": "firefox 32 bit and 64 bit duplicate install"
+  },
+  {
+    "id": "1539241",
+    "query": "firefox fake virus alert phishing popup"
+  },
+  {
+    "id": "1539490",
+    "query": "firefox uneven font display windows 10"
+  },
+  {
+    "id": "1539517",
+    "query": "firefox custom cursor extension not working"
+  },
+  {
+    "id": "1539554",
+    "query": "firefox add gork chatbot support"
+  },
+  {
+    "id": "1539588",
+    "query": "firefox youtube playback freeze crash"
+  },
+  {
+    "id": "1539463",
+    "query": "firefox manage cookie exceptions inefficient"
+  },
+  {
+    "id": "1539222",
+    "query": "firefox bookmarks toolbar empty macos"
+  },
+  {
+    "id": "1539582",
+    "query": "firefox account recovery help request"
+  },
+  {
+    "id": "1539578",
+    "query": "firefox progressive web app desktop install"
+  },
+  {
+    "id": "1539580",
+    "query": "firefox bookmarks and history disappeared"
+  },
+  {
+    "id": "1539566",
+    "query": "firefox bookmarks lost cannot add new"
+  },
+  {
+    "id": "1539567",
+    "query": "firefox multi account containers addon missing"
+  },
+  {
+    "id": "1539577",
+    "query": "firefox disable automatic google sign in"
+  },
+  {
+    "id": "1539544",
+    "query": "firefox xfinity streaming not working"
+  },
+  {
+    "id": "1539539",
+    "query": "firefox custom new tab url setting"
+  },
+  {
+    "id": "1539540",
+    "query": "firefox forced updates causing restarts"
+  },
+  {
+    "id": "1528001",
+    "query": "firefox access denied multiple websites"
+  },
+  {
+    "id": "1539429",
+    "query": "firefox update to fix youtube issues"
+  },
+  {
+    "id": "1539530",
+    "query": "firefox change default search engine ecosita"
+  },
+  {
+    "id": "1539551",
+    "query": "firefox bookmarks json guid mapping issue"
+  },
+  {
+    "id": "1539548",
+    "query": "firefox enter key clears search bar macos"
+  },
+  {
+    "id": "1539545",
+    "query": "firefox tabs menu bar too small accessibility"
+  },
+  {
+    "id": "1539538",
+    "query": "firefox delete old account configuration macos"
+  },
+  {
+    "id": "1539489",
+    "query": "firefox extension upload manifest signing error"
+  },
+  {
+    "id": "1538197",
+    "query": "firefox sidebar ai chatbot microphone not working"
+  },
+  {
+    "id": "1538855",
+    "query": "firefox specific websites not opening wearosbox"
+  },
+  {
+    "id": "1539026",
+    "query": "firefox cannot connect after network provider change"
+  },
+  {
+    "id": "1539145",
+    "query": "firefox facebook page not available error"
+  },
+  {
+    "id": "1539181",
+    "query": "firefox stop automatic download saving setting"
+  },
+  {
+    "id": "1539165",
+    "query": "firefox google drive not loading folders"
+  },
+  {
+    "id": "1539115",
+    "query": "firefox twitch website not opening"
+  },
+  {
+    "id": "1539398",
+    "query": "firefox slower performance after update"
+  },
+  {
+    "id": "1539414",
+    "query": "firefox passwords not syncing between devices"
+  },
+  {
+    "id": "1539452",
+    "query": "firefox kisskh website not opening"
+  },
+  {
+    "id": "1539536",
+    "query": "firefox microsoft on this day photos not loading"
+  },
+  {
+    "id": "1539524",
+    "query": "firefox weather widget only canadian cities"
+  },
+  {
+    "id": "1539527",
+    "query": "firefox fingerprint biometric login support"
+  },
+  {
+    "id": "1539532",
+    "query": "firefox search box larger after update"
+  },
+  {
+    "id": "1539531",
+    "query": "firefox misplaced bookmark folders library search"
+  },
+  {
+    "id": "1539441",
+    "query": "firefox access about config settings"
+  },
+  {
+    "id": "1539525",
+    "query": "firefox bookmarks missing lost all"
+  },
+  {
+    "id": "1539520",
+    "query": "firefox update stuck at 0 bytes windows 10"
+  },
+  {
+    "id": "1539519",
+    "query": "firefox linux picture in picture workspace issue"
+  },
+  {
+    "id": "1539515",
+    "query": "firefox disable password prompt on startup"
+  },
+  {
+    "id": "1539516",
+    "query": "firefox old bookmarks not syncing new computer"
+  },
+  {
+    "id": "1535112",
+    "query": "firefox frequent crashing error message"
+  },
+  {
+    "id": "1539513",
+    "query": "firefox reinstall loop macos not opening"
+  },
+  {
+    "id": "1538268",
+    "query": "firefox persistent pinned tabs feature request"
+  },
+  {
+    "id": "1539487",
+    "query": "firefox password entry redirected to manager"
+  },
+  {
+    "id": "1539488",
+    "query": "firefox 2fa token shows old email address"
+  },
+  {
+    "id": "1539342",
+    "query": "firefox default search engine keeps changing"
+  },
+  {
+    "id": "1537833",
+    "query": "firefox load all tabs at startup slow"
+  },
+  {
+    "id": "1539504",
+    "query": "firefox incorrect location detection cannot change"
+  },
+  {
+    "id": "1524128",
+    "query": "firefox bookmarks toolbar not syncing account"
+  },
+  {
+    "id": "1539495",
+    "query": "firefox spell check underline color missing"
+  },
+  {
+    "id": "1539493",
+    "query": "firefox system crash during youtube playback"
+  },
+  {
+    "id": "1539302",
+    "query": "firefox scrollbar too narrow increase width"
+  },
+  {
+    "id": "1539464",
+    "query": "firefox yahoo mail not receiving emails"
+  },
+  {
+    "id": "1539481",
+    "query": "firefox synced outdated data missing bookmarks"
+  },
+  {
+    "id": "1539483",
+    "query": "firefox 115 esr cannot update windows 7"
+  },
+  {
+    "id": "1538949",
+    "query": "firefox passwords missing after update recovery"
+  },
+  {
+    "id": "1538823",
+    "query": "firefox links not opening in new tab setting ignored"
+  },
+  {
+    "id": "1539419",
+    "query": "firefox input delay google translate performance"
+  },
+  {
+    "id": "1539426",
+    "query": "firefox delete cookies custom time range"
+  },
+  {
+    "id": "1539472",
+    "query": "firefox cannot access spouse account switch profile"
+  },
+  {
+    "id": "1538472",
+    "query": "firefox bookmarks duplicate nested folders sync"
+  },
+  {
+    "id": "1539445",
+    "query": "firefox forgot account password reset fingerprint login"
+  },
+  {
+    "id": "1539258",
+    "query": "firefox remove keyboard shortcuts from context menu"
+  },
+  {
+    "id": "1539444",
+    "query": "firefox cannot email link missing app association"
+  },
+  {
+    "id": "1539438",
+    "query": "firefox favicons missing in bookmarks folders"
+  },
+  {
+    "id": "1539431",
+    "query": "firefox clear cache onedrive not working"
+  },
+  {
+    "id": "1539428",
+    "query": "firefox full dll missing windows startup crash"
+  },
+  {
+    "id": "1539285",
+    "query": "firefox unwanted chrome data synced cannot delete"
+  },
+  {
+    "id": "1539407",
+    "query": "firefox weather widget missing major cities"
+  },
+  {
+    "id": "1539409",
+    "query": "firefox new tab weather wrong german region"
+  },
+  {
+    "id": "1539370",
+    "query": "firefox google drive drag and drop blocked"
+  },
+  {
+    "id": "1539416",
+    "query": "firefox account password rejected cannot login"
+  },
+  {
+    "id": "1539184",
+    "query": "firefox weather location wrong shows portland"
+  },
+  {
+    "id": "1539393",
+    "query": "firefox 2fa qr redirects to scam site"
+  },
+  {
+    "id": "1539401",
+    "query": "firefox install and setup on new laptop"
+  },
+  {
+    "id": "1539413",
+    "query": "firefox autocomplete prioritize most visited page"
+  },
+  {
+    "id": "1539381",
+    "query": "firefox make scrollbar wider detailed steps"
+  },
+  {
+    "id": "1539284",
+    "query": "firefox dns over https doh cloudflare error"
+  },
+  {
+    "id": "1539379",
+    "query": "firefox delete duplicate accounts free space"
+  },
+  {
+    "id": "1539294",
+    "query": "firefox download version for old windows xp 7"
+  },
+  {
+    "id": "1539364",
+    "query": "firefox bookmarks passwords not syncing new computer"
+  },
+  {
+    "id": "1539360",
+    "query": "firefox youtube playback choppy while gaming"
+  },
+  {
+    "id": "1539251",
+    "query": "firefox red dotted lines google search disable"
+  },
+  {
+    "id": "1539255",
+    "query": "firefox thunderbird links not opening vpn"
+  },
+  {
+    "id": "1539254",
+    "query": "firefox remove okta login redirect macos"
+  },
+  {
+    "id": "1539076",
+    "query": "mozilla connect missing my unmoderated items link"
+  },
+  {
+    "id": "1539175",
+    "query": "firefox passwords deleted microsoft pc manager conflict"
+  },
+  {
+    "id": "1539356",
+    "query": "firefox tabs closed session not restored after update"
+  },
+  {
+    "id": "1539141",
+    "query": "firefox macos hide dock tab previews"
+  },
+  {
+    "id": "1539354",
+    "query": "firefox microphone not working google voice call"
+  },
+  {
+    "id": "1539320",
+    "query": "firefox website requires php version clarification"
+  },
+  {
+    "id": "1539288",
+    "query": "firefox verizon account verification fails"
+  },
+  {
+    "id": "1539276",
+    "query": "firefox save username without password"
+  },
+  {
+    "id": "1539266",
+    "query": "firefox bandify popup ad malware removal"
+  },
+  {
+    "id": "1539263",
+    "query": "firefox disappeared after windows update lost data"
+  },
+  {
+    "id": "1539235",
+    "query": "firefox cannot scroll certain websites gdpr overlay"
+  },
+  {
+    "id": "1539232",
+    "query": "firefox change interface language macos 10.9"
+  },
+  {
+    "id": "1539229",
+    "query": "firefox restore bookmarks downgrade old version"
+  },
+  {
+    "id": "1539220",
+    "query": "firefox installation blocked by microsoft edge"
+  },
+  {
+    "id": "1538365",
+    "query": "firefox specific websites slow loading windows 10"
+  },
+  {
+    "id": "1539350",
+    "query": "firefox outdated version unsupported by 1password"
+  },
+  {
+    "id": "1539346",
+    "query": "firefox enable javascript instructions"
+  },
+  {
+    "id": "1539339",
+    "query": "firefox firewall settings windows connection issue"
+  },
+  {
+    "id": "1539340",
+    "query": "firefox account forgot password reset"
+  },
+  {
+    "id": "1539002",
+    "query": "update firefox 88 to latest version windows"
+  },
+  {
+    "id": "1539286",
+    "query": "firefox fingerprinting protection ineffective linux"
+  },
+  {
+    "id": "1539261",
+    "query": "firefox profile missing cannot open macos"
+  },
+  {
+    "id": "1508536",
+    "query": "firefox cannot rate add ons missing review option"
+  },
+  {
+    "id": "1539158",
+    "query": "firefox ctv news video streaming not working"
+  },
+  {
+    "id": "1539317",
+    "query": "firefox freezes crashes frequently windows"
+  },
+  {
+    "id": "1539230",
+    "query": "firefox restore old version with bookmarks"
+  },
+  {
+    "id": "1536304",
+    "query": "firefox cannot set custom homepage new tab"
+  },
+  {
+    "id": "1539292",
+    "query": "firefox menu bar auto unhide fullscreen citrix"
+  },
+  {
+    "id": "1530850",
+    "query": "firefox slow facebook performance edge faster"
+  },
+  {
+    "id": "1539306",
+    "query": "firefox default search keeps switching to bing"
+  },
+  {
+    "id": "1539309",
+    "query": "firefox remove google search bar from home screen"
+  },
+  {
+    "id": "1539308",
+    "query": "firefox enable javascript settings windows mac"
+  },
+  {
+    "id": "1512400",
+    "query": "firefox duplicate downloads always ask ignored"
+  },
+  {
+    "id": "1539293",
+    "query": "windows 11 microsoft copilot disables firefox facebook openoffice"
+  },
+  {
+    "id": "1538501",
+    "query": "firefox high ram usage compared to chrome edge"
+  },
+  {
+    "id": "1539289",
+    "query": "firefox google search missing autocomplete suggestions"
+  },
+  {
+    "id": "1539099",
+    "query": "firefox delete passwords for old email address"
+  },
+  {
+    "id": "1539170",
+    "query": "firefox lost saved passwords after update windows 11"
+  },
+  {
+    "id": "1512380",
+    "query": "firefox cannot print epson et2400 linux mint"
+  },
+  {
+    "id": "1517542",
+    "query": "firefox avg message unsupported confusion windows"
+  },
+  {
+    "id": "1539264",
+    "query": "firefox compatibility with 0patch after windows 10 support ends"
+  },
+  {
+    "id": "1539247",
+    "query": "firefox weather widget wrong city cannot update location"
+  },
+  {
+    "id": "1539262",
+    "query": "firefox capture raw audio stream before decoding"
+  },
+  {
+    "id": "1538443",
+    "query": "firefox google images see more button overlay issue"
+  },
+  {
+    "id": "1539244",
+    "query": "firefox contact extension developer 600% sound volume"
+  },
+  {
+    "id": "1539231",
+    "query": "firefox user scripts not installing or executing"
+  },
+  {
+    "id": "1530756",
+    "query": "firefox missing account login button in menu"
+  },
+  {
+    "id": "1539227",
+    "query": "firefox clear cookies and cache step by step"
+  },
+  {
+    "id": "1539179",
+    "query": "firefox youtube comments not loading or posting"
+  },
+  {
+    "id": "1539211",
+    "query": "firefox potential security risk ahead ssl certificate error"
+  },
+  {
+    "id": "1539217",
+    "query": "firefox enable javascript to download or fill forms"
+  }
+
+
+
+
+  
+
+  
+
