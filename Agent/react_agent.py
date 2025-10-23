@@ -36,7 +36,7 @@ Now reason step by step:
     """
 
     response = llm.invoke(prompt)
-    print("\n🤖 ReAct reasoning trace:\n", response)
+    print("\n ReAct reasoning trace:\n", response)
 
     thought = next((l for l in response.splitlines() if l.startswith("Thought:")), None)
     action = next((l for l in response.splitlines() if l.startswith("Action:")), None)
