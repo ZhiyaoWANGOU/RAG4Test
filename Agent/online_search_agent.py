@@ -1,4 +1,4 @@
-# Agent/react_agent.py
+# Agent/online_search_agent.py
 from dataclasses import dataclass
 from typing import List, Optional, Union
 from langchain_ollama import OllamaLLM
@@ -9,84 +9,16 @@ import warnings
 warnings.filterwarnings("ignore", category=ResourceWarning)
 
 
-# ===================== 基础数据结构 =====================
 @dataclass
 class AgentDecision:
-    """Final decision for ReAct reasoning or search stage."""
-    action: str                      # "generate" | "search" | "store" | "none"
-    result: Optional[Union[str, List[str]]] = None
+    """Agent output structure."""
+    action: str  # "generate" | "store"
     rationale: Optional[str] = None
+    result: Optional[str] = None
     combined_context: Optional[str] = None
     raw_results_count: int = 0
 
 
-# ===================== ReAct Reasoning =====================
-def react_reasoning(user_feedback: str, collected: List[str]) -> AgentDecision:
-    """
-    Reasoning agent that decides whether to:
-    - generate a bug report directly, or
-    - perform an online search (invokes online_search_agent)
-    """
-    llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 128})
-
-    context = (
-        f"User feedback:\n{user_feedback}\n\n"
-        f"Collected information:\n{collected}\n\n"
-    )
-
-    prompt = f"""
-You are a reasoning agent assisting in automated bug report generation.
-
-Thought: (analyze whether the collected information is sufficient)
-Action: (choose "generate" or "search")
-Observation: (explain your reasoning)
-Final Answer: (if generate, produce a structured bug report; if search, explain what to look for)
-
-Now reason step by step:
-{context}
-    """
-
-    response = llm.invoke(prompt)
-    print("\nReAct reasoning trace:\n", response)
-
-    # Extract key components
-    thought = next((l for l in response.splitlines() if l.startswith("Thought:")), None)
-    action = next((l for l in response.splitlines() if l.startswith("Action:")), None)
-
-    # Handle missing action
-    if not action:
-        return AgentDecision(action="none", rationale=thought)
-
-    # Case 1: Trigger online search
-    if "search" in action.lower():
-        print("\nReAct decided to perform online search...")
-        search_decision = online_search_agent(user_feedback)
-        print(f"Online Search Decision: {search_decision.action}")
-
-        if search_decision.action == "generate":
-            return AgentDecision(
-                action="generate",
-                result=search_decision.combined_context,
-                rationale=f"{thought}\n(Online search summary used)",
-                combined_context=search_decision.combined_context
-            )
-        else:
-            return AgentDecision(
-                action="store",
-                rationale=f"{thought}\n(Online search insufficient)",
-                combined_context=search_decision.combined_context
-            )
-
-    # Case 2: Directly generate
-    elif "generate" in action.lower():
-        final = response.split("Final Answer:", 1)[-1].strip()
-        return AgentDecision(action="generate", result=final, rationale=thought)
-
-    # Default fallback
-    return AgentDecision(action="none", rationale=thought)
-
-
-# ===================== Online Search Agent =====================
 def search_online(query: str, max_results: int = 8) -> List[str]:
     """Perform an online search using DuckDuckGo."""
     print(f"🌍 Searching for: {query}")
@@ -103,6 +35,7 @@ def search_online(query: str, max_results: int = 8) -> List[str]:
 def summarize_results(feedback: str, results: List[str]) -> str:
     """Summarize search results to extract likely causes or insights."""
     llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 256})
+
     combined_results = "\n".join(results[:8])
     prompt = f"""
 You are a software analysis assistant.
@@ -124,6 +57,7 @@ Summarize the relevant findings in concise technical English (2–4 sentences).
 def judge_relevance(feedback: str, summary: str) -> AgentDecision:
     """Ask the model whether the summary is relevant and sufficient."""
     llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 128})
+
     prompt = f"""
 You are an expert agent that decides whether the summarized online information
 is relevant and sufficient to help generate a structured bug report.
@@ -143,6 +77,7 @@ Answer ONLY in JSON format with these fields:
 """
     response = llm.invoke(prompt)
 
+    # try to parse JSON
     try:
         data = json.loads(response)
         action = data.get("action", "store")
@@ -172,6 +107,7 @@ def online_search_agent(feedback: str) -> AgentDecision:
     """
     query_llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 64})
 
+    # Step 1️⃣ generate short generic queries
     query_prompt = f"""
 You are an assistant that generates web search queries to find
 similar software issues to the following feedback.
@@ -198,6 +134,7 @@ Return them as a JSON list.
     for q in queries:
         print(" -", q)
 
+    # Step 2️⃣ search online
     all_results = []
     for q in queries:
         all_results.extend(search_online(q, max_results=5))
@@ -205,11 +142,15 @@ Return them as a JSON list.
     all_results = list(set(all_results))
     print(f"✅ Retrieved {len(all_results)} unique results.")
 
+    # Step 3️⃣ summarize findings
     summary = summarize_results(feedback, all_results)
+
+    # Step 4️⃣ judge relevance
     decision = judge_relevance(feedback, summary)
     decision.raw_results_count = len(all_results)
     decision.result = summary
 
+    # Final summary
     print("\n📊 ===== Online Search Agent Decision =====")
     print(f"Action: {decision.action}")
     print(f"Rationale: {decision.rationale}")
