@@ -1,0 +1,1434 @@
+{
+  "case_count": 189,
+  "reuse_count": 10,
+  "history": [
+    {
+      "timestamp": "2025-11-06 11:47:20",
+      "case_count": 1,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:48:07",
+      "case_count": 2,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:48:59",
+      "case_count": 3,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:49:36",
+      "case_count": 4,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:49:36",
+      "case_count": 4,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:49:53",
+      "case_count": 5,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:49:53",
+      "case_count": 5,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:50:44",
+      "case_count": 6,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:51:04",
+      "case_count": 7,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:51:04",
+      "case_count": 7,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:51:20",
+      "case_count": 8,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:51:20",
+      "case_count": 8,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:52:11",
+      "case_count": 9,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:53:20",
+      "case_count": 10,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:54:16",
+      "case_count": 11,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:55:28",
+      "case_count": 12,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:56:03",
+      "case_count": 13,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:56:03",
+      "case_count": 13,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:56:57",
+      "case_count": 14,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:56:57",
+      "case_count": 14,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:57:20",
+      "case_count": 15,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:57:20",
+      "case_count": 15,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:57:47",
+      "case_count": 16,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:57:47",
+      "case_count": 16,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:58:03",
+      "case_count": 17,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:58:03",
+      "case_count": 17,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:58:43",
+      "case_count": 18,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:59:05",
+      "case_count": 19,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 11:59:05",
+      "case_count": 19,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:00:00",
+      "case_count": 20,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:00:48",
+      "case_count": 21,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:01:52",
+      "case_count": 22,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:02:53",
+      "case_count": 23,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:03:47",
+      "case_count": 24,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:04:38",
+      "case_count": 25,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:05:36",
+      "case_count": 26,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:06:48",
+      "case_count": 27,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:07:41",
+      "case_count": 28,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:08:36",
+      "case_count": 29,
+      "reuse_count": 0,
+      "reuse_rate": 0.0
+    },
+    {
+      "timestamp": "2025-11-06 12:08:41",
+      "case_count": 30,
+      "reuse_count": 1,
+      "reuse_rate": 0.0333
+    },
+    {
+      "timestamp": "2025-11-06 12:09:35",
+      "case_count": 31,
+      "reuse_count": 1,
+      "reuse_rate": 0.0323
+    },
+    {
+      "timestamp": "2025-11-06 12:26:05",
+      "case_count": 32,
+      "reuse_count": 1,
+      "reuse_rate": 0.0312
+    },
+    {
+      "timestamp": "2025-11-06 12:26:40",
+      "case_count": 33,
+      "reuse_count": 2,
+      "reuse_rate": 0.0606
+    },
+    {
+      "timestamp": "2025-11-06 12:27:02",
+      "case_count": 34,
+      "reuse_count": 2,
+      "reuse_rate": 0.0588
+    },
+    {
+      "timestamp": "2025-11-06 12:27:02",
+      "case_count": 34,
+      "reuse_count": 2,
+      "reuse_rate": 0.0588
+    },
+    {
+      "timestamp": "2025-11-06 12:27:42",
+      "case_count": 35,
+      "reuse_count": 2,
+      "reuse_rate": 0.0571
+    },
+    {
+      "timestamp": "2025-11-06 12:27:42",
+      "case_count": 35,
+      "reuse_count": 2,
+      "reuse_rate": 0.0571
+    },
+    {
+      "timestamp": "2025-11-06 12:28:41",
+      "case_count": 36,
+      "reuse_count": 2,
+      "reuse_rate": 0.0556
+    },
+    {
+      "timestamp": "2025-11-06 12:29:07",
+      "case_count": 37,
+      "reuse_count": 2,
+      "reuse_rate": 0.0541
+    },
+    {
+      "timestamp": "2025-11-06 12:29:07",
+      "case_count": 37,
+      "reuse_count": 2,
+      "reuse_rate": 0.0541
+    },
+    {
+      "timestamp": "2025-11-06 12:29:58",
+      "case_count": 38,
+      "reuse_count": 2,
+      "reuse_rate": 0.0526
+    },
+    {
+      "timestamp": "2025-11-06 12:31:03",
+      "case_count": 39,
+      "reuse_count": 2,
+      "reuse_rate": 0.0513
+    },
+    {
+      "timestamp": "2025-11-06 12:31:28",
+      "case_count": 40,
+      "reuse_count": 2,
+      "reuse_rate": 0.05
+    },
+    {
+      "timestamp": "2025-11-06 12:31:28",
+      "case_count": 40,
+      "reuse_count": 2,
+      "reuse_rate": 0.05
+    },
+    {
+      "timestamp": "2025-11-06 12:32:08",
+      "case_count": 41,
+      "reuse_count": 2,
+      "reuse_rate": 0.0488
+    },
+    {
+      "timestamp": "2025-11-06 12:32:08",
+      "case_count": 41,
+      "reuse_count": 2,
+      "reuse_rate": 0.0488
+    },
+    {
+      "timestamp": "2025-11-06 12:33:17",
+      "case_count": 42,
+      "reuse_count": 2,
+      "reuse_rate": 0.0476
+    },
+    {
+      "timestamp": "2025-11-06 12:33:58",
+      "case_count": 43,
+      "reuse_count": 2,
+      "reuse_rate": 0.0465
+    },
+    {
+      "timestamp": "2025-11-06 12:34:20",
+      "case_count": 44,
+      "reuse_count": 2,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 12:34:20",
+      "case_count": 44,
+      "reuse_count": 2,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 12:34:32",
+      "case_count": 45,
+      "reuse_count": 2,
+      "reuse_rate": 0.0444
+    },
+    {
+      "timestamp": "2025-11-06 12:34:32",
+      "case_count": 45,
+      "reuse_count": 2,
+      "reuse_rate": 0.0444
+    },
+    {
+      "timestamp": "2025-11-06 12:35:19",
+      "case_count": 46,
+      "reuse_count": 2,
+      "reuse_rate": 0.0435
+    },
+    {
+      "timestamp": "2025-11-06 12:36:19",
+      "case_count": 47,
+      "reuse_count": 2,
+      "reuse_rate": 0.0426
+    },
+    {
+      "timestamp": "2025-11-06 12:37:24",
+      "case_count": 48,
+      "reuse_count": 2,
+      "reuse_rate": 0.0417
+    },
+    {
+      "timestamp": "2025-11-06 12:38:30",
+      "case_count": 49,
+      "reuse_count": 2,
+      "reuse_rate": 0.0408
+    },
+    {
+      "timestamp": "2025-11-06 12:39:14",
+      "case_count": 50,
+      "reuse_count": 2,
+      "reuse_rate": 0.04
+    },
+    {
+      "timestamp": "2025-11-06 12:39:51",
+      "case_count": 51,
+      "reuse_count": 2,
+      "reuse_rate": 0.0392
+    },
+    {
+      "timestamp": "2025-11-06 12:40:46",
+      "case_count": 52,
+      "reuse_count": 2,
+      "reuse_rate": 0.0385
+    },
+    {
+      "timestamp": "2025-11-06 12:41:30",
+      "case_count": 53,
+      "reuse_count": 2,
+      "reuse_rate": 0.0377
+    },
+    {
+      "timestamp": "2025-11-06 12:42:21",
+      "case_count": 54,
+      "reuse_count": 2,
+      "reuse_rate": 0.037
+    },
+    {
+      "timestamp": "2025-11-06 12:43:13",
+      "case_count": 55,
+      "reuse_count": 2,
+      "reuse_rate": 0.0364
+    },
+    {
+      "timestamp": "2025-11-06 12:43:45",
+      "case_count": 56,
+      "reuse_count": 2,
+      "reuse_rate": 0.0357
+    },
+    {
+      "timestamp": "2025-11-06 12:43:45",
+      "case_count": 56,
+      "reuse_count": 2,
+      "reuse_rate": 0.0357
+    },
+    {
+      "timestamp": "2025-11-06 12:44:59",
+      "case_count": 57,
+      "reuse_count": 2,
+      "reuse_rate": 0.0351
+    },
+    {
+      "timestamp": "2025-11-06 12:45:29",
+      "case_count": 58,
+      "reuse_count": 2,
+      "reuse_rate": 0.0345
+    },
+    {
+      "timestamp": "2025-11-06 12:46:34",
+      "case_count": 59,
+      "reuse_count": 2,
+      "reuse_rate": 0.0339
+    },
+    {
+      "timestamp": "2025-11-06 12:46:53",
+      "case_count": 60,
+      "reuse_count": 2,
+      "reuse_rate": 0.0333
+    },
+    {
+      "timestamp": "2025-11-06 12:46:53",
+      "case_count": 60,
+      "reuse_count": 2,
+      "reuse_rate": 0.0333
+    },
+    {
+      "timestamp": "2025-11-06 12:47:36",
+      "case_count": 61,
+      "reuse_count": 2,
+      "reuse_rate": 0.0328
+    },
+    {
+      "timestamp": "2025-11-06 12:47:56",
+      "case_count": 62,
+      "reuse_count": 2,
+      "reuse_rate": 0.0323
+    },
+    {
+      "timestamp": "2025-11-06 12:47:56",
+      "case_count": 62,
+      "reuse_count": 2,
+      "reuse_rate": 0.0323
+    },
+    {
+      "timestamp": "2025-11-06 12:48:47",
+      "case_count": 63,
+      "reuse_count": 2,
+      "reuse_rate": 0.0317
+    },
+    {
+      "timestamp": "2025-11-06 12:49:53",
+      "case_count": 64,
+      "reuse_count": 2,
+      "reuse_rate": 0.0312
+    },
+    {
+      "timestamp": "2025-11-06 12:50:14",
+      "case_count": 65,
+      "reuse_count": 2,
+      "reuse_rate": 0.0308
+    },
+    {
+      "timestamp": "2025-11-06 12:50:14",
+      "case_count": 65,
+      "reuse_count": 2,
+      "reuse_rate": 0.0308
+    },
+    {
+      "timestamp": "2025-11-06 12:51:03",
+      "case_count": 66,
+      "reuse_count": 2,
+      "reuse_rate": 0.0303
+    },
+    {
+      "timestamp": "2025-11-06 12:51:41",
+      "case_count": 67,
+      "reuse_count": 2,
+      "reuse_rate": 0.0299
+    },
+    {
+      "timestamp": "2025-11-06 12:52:11",
+      "case_count": 68,
+      "reuse_count": 2,
+      "reuse_rate": 0.0294
+    },
+    {
+      "timestamp": "2025-11-06 12:52:11",
+      "case_count": 68,
+      "reuse_count": 2,
+      "reuse_rate": 0.0294
+    },
+    {
+      "timestamp": "2025-11-06 12:52:59",
+      "case_count": 69,
+      "reuse_count": 2,
+      "reuse_rate": 0.029
+    },
+    {
+      "timestamp": "2025-11-06 12:53:55",
+      "case_count": 70,
+      "reuse_count": 2,
+      "reuse_rate": 0.0286
+    },
+    {
+      "timestamp": "2025-11-06 12:54:46",
+      "case_count": 71,
+      "reuse_count": 2,
+      "reuse_rate": 0.0282
+    },
+    {
+      "timestamp": "2025-11-06 12:55:42",
+      "case_count": 72,
+      "reuse_count": 2,
+      "reuse_rate": 0.0278
+    },
+    {
+      "timestamp": "2025-11-06 12:56:35",
+      "case_count": 73,
+      "reuse_count": 2,
+      "reuse_rate": 0.0274
+    },
+    {
+      "timestamp": "2025-11-06 12:57:21",
+      "case_count": 74,
+      "reuse_count": 2,
+      "reuse_rate": 0.027
+    },
+    {
+      "timestamp": "2025-11-06 12:57:25",
+      "case_count": 75,
+      "reuse_count": 3,
+      "reuse_rate": 0.04
+    },
+    {
+      "timestamp": "2025-11-06 12:58:23",
+      "case_count": 76,
+      "reuse_count": 3,
+      "reuse_rate": 0.0395
+    },
+    {
+      "timestamp": "2025-11-06 12:59:09",
+      "case_count": 77,
+      "reuse_count": 3,
+      "reuse_rate": 0.039
+    },
+    {
+      "timestamp": "2025-11-06 12:59:59",
+      "case_count": 78,
+      "reuse_count": 3,
+      "reuse_rate": 0.0385
+    },
+    {
+      "timestamp": "2025-11-06 13:00:55",
+      "case_count": 79,
+      "reuse_count": 3,
+      "reuse_rate": 0.038
+    },
+    {
+      "timestamp": "2025-11-06 13:01:46",
+      "case_count": 80,
+      "reuse_count": 3,
+      "reuse_rate": 0.0375
+    },
+    {
+      "timestamp": "2025-11-06 13:02:32",
+      "case_count": 81,
+      "reuse_count": 3,
+      "reuse_rate": 0.037
+    },
+    {
+      "timestamp": "2025-11-06 13:03:18",
+      "case_count": 82,
+      "reuse_count": 3,
+      "reuse_rate": 0.0366
+    },
+    {
+      "timestamp": "2025-11-06 13:04:02",
+      "case_count": 83,
+      "reuse_count": 3,
+      "reuse_rate": 0.0361
+    },
+    {
+      "timestamp": "2025-11-06 13:04:46",
+      "case_count": 84,
+      "reuse_count": 3,
+      "reuse_rate": 0.0357
+    },
+    {
+      "timestamp": "2025-11-06 13:05:16",
+      "case_count": 85,
+      "reuse_count": 3,
+      "reuse_rate": 0.0353
+    },
+    {
+      "timestamp": "2025-11-06 13:05:16",
+      "case_count": 85,
+      "reuse_count": 3,
+      "reuse_rate": 0.0353
+    },
+    {
+      "timestamp": "2025-11-06 13:06:01",
+      "case_count": 86,
+      "reuse_count": 3,
+      "reuse_rate": 0.0349
+    },
+    {
+      "timestamp": "2025-11-06 13:06:24",
+      "case_count": 87,
+      "reuse_count": 3,
+      "reuse_rate": 0.0345
+    },
+    {
+      "timestamp": "2025-11-06 13:06:24",
+      "case_count": 87,
+      "reuse_count": 3,
+      "reuse_rate": 0.0345
+    },
+    {
+      "timestamp": "2025-11-06 13:06:44",
+      "case_count": 88,
+      "reuse_count": 3,
+      "reuse_rate": 0.0341
+    },
+    {
+      "timestamp": "2025-11-06 13:06:44",
+      "case_count": 88,
+      "reuse_count": 3,
+      "reuse_rate": 0.0341
+    },
+    {
+      "timestamp": "2025-11-06 13:07:03",
+      "case_count": 89,
+      "reuse_count": 3,
+      "reuse_rate": 0.0337
+    },
+    {
+      "timestamp": "2025-11-06 13:07:03",
+      "case_count": 89,
+      "reuse_count": 3,
+      "reuse_rate": 0.0337
+    },
+    {
+      "timestamp": "2025-11-06 13:07:58",
+      "case_count": 90,
+      "reuse_count": 3,
+      "reuse_rate": 0.0333
+    },
+    {
+      "timestamp": "2025-11-06 13:08:18",
+      "case_count": 91,
+      "reuse_count": 3,
+      "reuse_rate": 0.033
+    },
+    {
+      "timestamp": "2025-11-06 13:08:18",
+      "case_count": 91,
+      "reuse_count": 3,
+      "reuse_rate": 0.033
+    },
+    {
+      "timestamp": "2025-11-06 13:09:10",
+      "case_count": 92,
+      "reuse_count": 3,
+      "reuse_rate": 0.0326
+    },
+    {
+      "timestamp": "2025-11-06 13:09:14",
+      "case_count": 93,
+      "reuse_count": 4,
+      "reuse_rate": 0.043
+    },
+    {
+      "timestamp": "2025-11-06 13:10:06",
+      "case_count": 94,
+      "reuse_count": 4,
+      "reuse_rate": 0.0426
+    },
+    {
+      "timestamp": "2025-11-06 13:10:44",
+      "case_count": 95,
+      "reuse_count": 4,
+      "reuse_rate": 0.0421
+    },
+    {
+      "timestamp": "2025-11-06 13:11:26",
+      "case_count": 96,
+      "reuse_count": 4,
+      "reuse_rate": 0.0417
+    },
+    {
+      "timestamp": "2025-11-06 13:12:27",
+      "case_count": 97,
+      "reuse_count": 4,
+      "reuse_rate": 0.0412
+    },
+    {
+      "timestamp": "2025-11-06 13:13:39",
+      "case_count": 98,
+      "reuse_count": 4,
+      "reuse_rate": 0.0408
+    },
+    {
+      "timestamp": "2025-11-06 13:14:28",
+      "case_count": 99,
+      "reuse_count": 4,
+      "reuse_rate": 0.0404
+    },
+    {
+      "timestamp": "2025-11-06 13:15:31",
+      "case_count": 100,
+      "reuse_count": 4,
+      "reuse_rate": 0.04
+    },
+    {
+      "timestamp": "2025-11-06 13:16:34",
+      "case_count": 101,
+      "reuse_count": 4,
+      "reuse_rate": 0.0396
+    },
+    {
+      "timestamp": "2025-11-06 13:17:19",
+      "case_count": 102,
+      "reuse_count": 4,
+      "reuse_rate": 0.0392
+    },
+    {
+      "timestamp": "2025-11-06 13:17:25",
+      "case_count": 103,
+      "reuse_count": 5,
+      "reuse_rate": 0.0485
+    },
+    {
+      "timestamp": "2025-11-06 13:18:08",
+      "case_count": 104,
+      "reuse_count": 5,
+      "reuse_rate": 0.0481
+    },
+    {
+      "timestamp": "2025-11-06 13:19:14",
+      "case_count": 105,
+      "reuse_count": 5,
+      "reuse_rate": 0.0476
+    },
+    {
+      "timestamp": "2025-11-06 13:19:33",
+      "case_count": 106,
+      "reuse_count": 5,
+      "reuse_rate": 0.0472
+    },
+    {
+      "timestamp": "2025-11-06 13:19:33",
+      "case_count": 106,
+      "reuse_count": 5,
+      "reuse_rate": 0.0472
+    },
+    {
+      "timestamp": "2025-11-06 13:20:39",
+      "case_count": 107,
+      "reuse_count": 5,
+      "reuse_rate": 0.0467
+    },
+    {
+      "timestamp": "2025-11-06 13:21:36",
+      "case_count": 108,
+      "reuse_count": 5,
+      "reuse_rate": 0.0463
+    },
+    {
+      "timestamp": "2025-11-06 13:22:39",
+      "case_count": 109,
+      "reuse_count": 5,
+      "reuse_rate": 0.0459
+    },
+    {
+      "timestamp": "2025-11-06 13:22:59",
+      "case_count": 110,
+      "reuse_count": 5,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 13:22:59",
+      "case_count": 110,
+      "reuse_count": 5,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 13:23:13",
+      "case_count": 111,
+      "reuse_count": 5,
+      "reuse_rate": 0.045
+    },
+    {
+      "timestamp": "2025-11-06 13:23:13",
+      "case_count": 111,
+      "reuse_count": 5,
+      "reuse_rate": 0.045
+    },
+    {
+      "timestamp": "2025-11-06 13:24:09",
+      "case_count": 112,
+      "reuse_count": 5,
+      "reuse_rate": 0.0446
+    },
+    {
+      "timestamp": "2025-11-06 13:24:56",
+      "case_count": 113,
+      "reuse_count": 5,
+      "reuse_rate": 0.0442
+    },
+    {
+      "timestamp": "2025-11-06 13:25:45",
+      "case_count": 114,
+      "reuse_count": 5,
+      "reuse_rate": 0.0439
+    },
+    {
+      "timestamp": "2025-11-06 13:26:13",
+      "case_count": 115,
+      "reuse_count": 5,
+      "reuse_rate": 0.0435
+    },
+    {
+      "timestamp": "2025-11-06 13:26:13",
+      "case_count": 115,
+      "reuse_count": 5,
+      "reuse_rate": 0.0435
+    },
+    {
+      "timestamp": "2025-11-06 13:27:06",
+      "case_count": 116,
+      "reuse_count": 5,
+      "reuse_rate": 0.0431
+    },
+    {
+      "timestamp": "2025-11-06 13:27:52",
+      "case_count": 117,
+      "reuse_count": 5,
+      "reuse_rate": 0.0427
+    },
+    {
+      "timestamp": "2025-11-06 13:28:59",
+      "case_count": 118,
+      "reuse_count": 5,
+      "reuse_rate": 0.0424
+    },
+    {
+      "timestamp": "2025-11-06 13:29:31",
+      "case_count": 119,
+      "reuse_count": 5,
+      "reuse_rate": 0.042
+    },
+    {
+      "timestamp": "2025-11-06 13:29:31",
+      "case_count": 119,
+      "reuse_count": 5,
+      "reuse_rate": 0.042
+    },
+    {
+      "timestamp": "2025-11-06 13:29:49",
+      "case_count": 120,
+      "reuse_count": 5,
+      "reuse_rate": 0.0417
+    },
+    {
+      "timestamp": "2025-11-06 13:29:49",
+      "case_count": 120,
+      "reuse_count": 5,
+      "reuse_rate": 0.0417
+    },
+    {
+      "timestamp": "2025-11-06 13:30:34",
+      "case_count": 121,
+      "reuse_count": 5,
+      "reuse_rate": 0.0413
+    },
+    {
+      "timestamp": "2025-11-06 13:31:35",
+      "case_count": 122,
+      "reuse_count": 5,
+      "reuse_rate": 0.041
+    },
+    {
+      "timestamp": "2025-11-06 13:32:56",
+      "case_count": 123,
+      "reuse_count": 5,
+      "reuse_rate": 0.0407
+    },
+    {
+      "timestamp": "2025-11-06 13:33:42",
+      "case_count": 124,
+      "reuse_count": 5,
+      "reuse_rate": 0.0403
+    },
+    {
+      "timestamp": "2025-11-06 13:33:42",
+      "case_count": 124,
+      "reuse_count": 5,
+      "reuse_rate": 0.0403
+    },
+    {
+      "timestamp": "2025-11-06 13:34:42",
+      "case_count": 125,
+      "reuse_count": 5,
+      "reuse_rate": 0.04
+    },
+    {
+      "timestamp": "2025-11-06 13:35:35",
+      "case_count": 126,
+      "reuse_count": 5,
+      "reuse_rate": 0.0397
+    },
+    {
+      "timestamp": "2025-11-06 13:35:39",
+      "case_count": 127,
+      "reuse_count": 6,
+      "reuse_rate": 0.0472
+    },
+    {
+      "timestamp": "2025-11-06 13:36:38",
+      "case_count": 128,
+      "reuse_count": 6,
+      "reuse_rate": 0.0469
+    },
+    {
+      "timestamp": "2025-11-06 13:37:37",
+      "case_count": 129,
+      "reuse_count": 6,
+      "reuse_rate": 0.0465
+    },
+    {
+      "timestamp": "2025-11-06 13:38:30",
+      "case_count": 130,
+      "reuse_count": 6,
+      "reuse_rate": 0.0462
+    },
+    {
+      "timestamp": "2025-11-06 13:39:30",
+      "case_count": 131,
+      "reuse_count": 6,
+      "reuse_rate": 0.0458
+    },
+    {
+      "timestamp": "2025-11-06 13:40:22",
+      "case_count": 132,
+      "reuse_count": 6,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 13:40:22",
+      "case_count": 132,
+      "reuse_count": 6,
+      "reuse_rate": 0.0455
+    },
+    {
+      "timestamp": "2025-11-06 13:41:08",
+      "case_count": 133,
+      "reuse_count": 6,
+      "reuse_rate": 0.0451
+    },
+    {
+      "timestamp": "2025-11-06 13:42:10",
+      "case_count": 134,
+      "reuse_count": 6,
+      "reuse_rate": 0.0448
+    },
+    {
+      "timestamp": "2025-11-06 13:42:18",
+      "case_count": 135,
+      "reuse_count": 7,
+      "reuse_rate": 0.0519
+    },
+    {
+      "timestamp": "2025-11-06 13:42:22",
+      "case_count": 136,
+      "reuse_count": 8,
+      "reuse_rate": 0.0588
+    },
+    {
+      "timestamp": "2025-11-06 13:43:05",
+      "case_count": 137,
+      "reuse_count": 8,
+      "reuse_rate": 0.0584
+    },
+    {
+      "timestamp": "2025-11-06 13:44:02",
+      "case_count": 138,
+      "reuse_count": 8,
+      "reuse_rate": 0.058
+    },
+    {
+      "timestamp": "2025-11-06 13:44:55",
+      "case_count": 139,
+      "reuse_count": 8,
+      "reuse_rate": 0.0576
+    },
+    {
+      "timestamp": "2025-11-06 13:47:24",
+      "case_count": 140,
+      "reuse_count": 8,
+      "reuse_rate": 0.0571
+    },
+    {
+      "timestamp": "2025-11-06 13:48:35",
+      "case_count": 141,
+      "reuse_count": 8,
+      "reuse_rate": 0.0567
+    },
+    {
+      "timestamp": "2025-11-06 13:49:33",
+      "case_count": 142,
+      "reuse_count": 8,
+      "reuse_rate": 0.0563
+    },
+    {
+      "timestamp": "2025-11-06 13:50:33",
+      "case_count": 143,
+      "reuse_count": 8,
+      "reuse_rate": 0.0559
+    },
+    {
+      "timestamp": "2025-11-06 13:51:44",
+      "case_count": 144,
+      "reuse_count": 8,
+      "reuse_rate": 0.0556
+    },
+    {
+      "timestamp": "2025-11-06 13:53:04",
+      "case_count": 145,
+      "reuse_count": 8,
+      "reuse_rate": 0.0552
+    },
+    {
+      "timestamp": "2025-11-06 13:54:07",
+      "case_count": 146,
+      "reuse_count": 8,
+      "reuse_rate": 0.0548
+    },
+    {
+      "timestamp": "2025-11-06 13:55:32",
+      "case_count": 147,
+      "reuse_count": 8,
+      "reuse_rate": 0.0544
+    },
+    {
+      "timestamp": "2025-11-06 13:56:17",
+      "case_count": 148,
+      "reuse_count": 8,
+      "reuse_rate": 0.0541
+    },
+    {
+      "timestamp": "2025-11-06 13:56:17",
+      "case_count": 148,
+      "reuse_count": 8,
+      "reuse_rate": 0.0541
+    },
+    {
+      "timestamp": "2025-11-06 13:57:26",
+      "case_count": 149,
+      "reuse_count": 8,
+      "reuse_rate": 0.0537
+    },
+    {
+      "timestamp": "2025-11-06 13:57:55",
+      "case_count": 150,
+      "reuse_count": 8,
+      "reuse_rate": 0.0533
+    },
+    {
+      "timestamp": "2025-11-06 13:57:55",
+      "case_count": 150,
+      "reuse_count": 8,
+      "reuse_rate": 0.0533
+    },
+    {
+      "timestamp": "2025-11-06 13:58:41",
+      "case_count": 151,
+      "reuse_count": 8,
+      "reuse_rate": 0.053
+    },
+    {
+      "timestamp": "2025-11-06 14:00:06",
+      "case_count": 152,
+      "reuse_count": 8,
+      "reuse_rate": 0.0526
+    },
+    {
+      "timestamp": "2025-11-06 14:01:04",
+      "case_count": 153,
+      "reuse_count": 8,
+      "reuse_rate": 0.0523
+    },
+    {
+      "timestamp": "2025-11-06 14:02:14",
+      "case_count": 154,
+      "reuse_count": 8,
+      "reuse_rate": 0.0519
+    },
+    {
+      "timestamp": "2025-11-06 14:02:35",
+      "case_count": 155,
+      "reuse_count": 8,
+      "reuse_rate": 0.0516
+    },
+    {
+      "timestamp": "2025-11-06 14:02:35",
+      "case_count": 155,
+      "reuse_count": 8,
+      "reuse_rate": 0.0516
+    },
+    {
+      "timestamp": "2025-11-06 14:03:05",
+      "case_count": 156,
+      "reuse_count": 8,
+      "reuse_rate": 0.0513
+    },
+    {
+      "timestamp": "2025-11-06 14:03:05",
+      "case_count": 156,
+      "reuse_count": 8,
+      "reuse_rate": 0.0513
+    },
+    {
+      "timestamp": "2025-11-06 14:03:37",
+      "case_count": 157,
+      "reuse_count": 8,
+      "reuse_rate": 0.051
+    },
+    {
+      "timestamp": "2025-11-06 14:03:37",
+      "case_count": 157,
+      "reuse_count": 8,
+      "reuse_rate": 0.051
+    },
+    {
+      "timestamp": "2025-11-06 14:04:19",
+      "case_count": 158,
+      "reuse_count": 8,
+      "reuse_rate": 0.0506
+    },
+    {
+      "timestamp": "2025-11-06 14:05:54",
+      "case_count": 159,
+      "reuse_count": 8,
+      "reuse_rate": 0.0503
+    },
+    {
+      "timestamp": "2025-11-06 14:07:20",
+      "case_count": 160,
+      "reuse_count": 8,
+      "reuse_rate": 0.05
+    },
+    {
+      "timestamp": "2025-11-06 14:08:47",
+      "case_count": 161,
+      "reuse_count": 8,
+      "reuse_rate": 0.0497
+    },
+    {
+      "timestamp": "2025-11-06 14:10:06",
+      "case_count": 162,
+      "reuse_count": 8,
+      "reuse_rate": 0.0494
+    },
+    {
+      "timestamp": "2025-11-06 14:11:26",
+      "case_count": 163,
+      "reuse_count": 8,
+      "reuse_rate": 0.0491
+    },
+    {
+      "timestamp": "2025-11-06 14:12:08",
+      "case_count": 164,
+      "reuse_count": 8,
+      "reuse_rate": 0.0488
+    },
+    {
+      "timestamp": "2025-11-06 14:12:08",
+      "case_count": 164,
+      "reuse_count": 8,
+      "reuse_rate": 0.0488
+    },
+    {
+      "timestamp": "2025-11-06 14:12:15",
+      "case_count": 165,
+      "reuse_count": 9,
+      "reuse_rate": 0.0545
+    },
+    {
+      "timestamp": "2025-11-06 14:13:21",
+      "case_count": 166,
+      "reuse_count": 9,
+      "reuse_rate": 0.0542
+    },
+    {
+      "timestamp": "2025-11-06 14:14:41",
+      "case_count": 167,
+      "reuse_count": 9,
+      "reuse_rate": 0.0539
+    },
+    {
+      "timestamp": "2025-11-06 14:15:55",
+      "case_count": 168,
+      "reuse_count": 9,
+      "reuse_rate": 0.0536
+    },
+    {
+      "timestamp": "2025-11-06 14:16:17",
+      "case_count": 169,
+      "reuse_count": 9,
+      "reuse_rate": 0.0533
+    },
+    {
+      "timestamp": "2025-11-06 14:16:17",
+      "case_count": 169,
+      "reuse_count": 9,
+      "reuse_rate": 0.0533
+    },
+    {
+      "timestamp": "2025-11-06 14:16:22",
+      "case_count": 170,
+      "reuse_count": 10,
+      "reuse_rate": 0.0588
+    },
+    {
+      "timestamp": "2025-11-06 14:16:50",
+      "case_count": 171,
+      "reuse_count": 10,
+      "reuse_rate": 0.0585
+    },
+    {
+      "timestamp": "2025-11-06 14:16:50",
+      "case_count": 171,
+      "reuse_count": 10,
+      "reuse_rate": 0.0585
+    },
+    {
+      "timestamp": "2025-11-06 14:18:11",
+      "case_count": 172,
+      "reuse_count": 10,
+      "reuse_rate": 0.0581
+    },
+    {
+      "timestamp": "2025-11-06 14:18:58",
+      "case_count": 173,
+      "reuse_count": 10,
+      "reuse_rate": 0.0578
+    },
+    {
+      "timestamp": "2025-11-06 14:19:58",
+      "case_count": 174,
+      "reuse_count": 10,
+      "reuse_rate": 0.0575
+    },
+    {
+      "timestamp": "2025-11-06 14:21:08",
+      "case_count": 175,
+      "reuse_count": 10,
+      "reuse_rate": 0.0571
+    },
+    {
+      "timestamp": "2025-11-06 14:21:26",
+      "case_count": 176,
+      "reuse_count": 10,
+      "reuse_rate": 0.0568
+    },
+    {
+      "timestamp": "2025-11-06 14:21:26",
+      "case_count": 176,
+      "reuse_count": 10,
+      "reuse_rate": 0.0568
+    },
+    {
+      "timestamp": "2025-11-06 14:22:49",
+      "case_count": 177,
+      "reuse_count": 10,
+      "reuse_rate": 0.0565
+    },
+    {
+      "timestamp": "2025-11-06 14:23:11",
+      "case_count": 178,
+      "reuse_count": 10,
+      "reuse_rate": 0.0562
+    },
+    {
+      "timestamp": "2025-11-06 14:23:11",
+      "case_count": 178,
+      "reuse_count": 10,
+      "reuse_rate": 0.0562
+    },
+    {
+      "timestamp": "2025-11-06 14:24:03",
+      "case_count": 179,
+      "reuse_count": 10,
+      "reuse_rate": 0.0559
+    },
+    {
+      "timestamp": "2025-11-06 14:24:18",
+      "case_count": 180,
+      "reuse_count": 10,
+      "reuse_rate": 0.0556
+    },
+    {
+      "timestamp": "2025-11-06 14:24:18",
+      "case_count": 180,
+      "reuse_count": 10,
+      "reuse_rate": 0.0556
+    },
+    {
+      "timestamp": "2025-11-06 14:25:39",
+      "case_count": 181,
+      "reuse_count": 10,
+      "reuse_rate": 0.0552
+    },
+    {
+      "timestamp": "2025-11-06 14:27:01",
+      "case_count": 182,
+      "reuse_count": 10,
+      "reuse_rate": 0.0549
+    },
+    {
+      "timestamp": "2025-11-06 14:28:06",
+      "case_count": 183,
+      "reuse_count": 10,
+      "reuse_rate": 0.0546
+    },
+    {
+      "timestamp": "2025-11-06 14:29:27",
+      "case_count": 184,
+      "reuse_count": 10,
+      "reuse_rate": 0.0543
+    },
+    {
+      "timestamp": "2025-11-06 14:30:32",
+      "case_count": 185,
+      "reuse_count": 10,
+      "reuse_rate": 0.0541
+    },
+    {
+      "timestamp": "2025-11-06 14:31:03",
+      "case_count": 186,
+      "reuse_count": 10,
+      "reuse_rate": 0.0538
+    },
+    {
+      "timestamp": "2025-11-06 14:31:03",
+      "case_count": 186,
+      "reuse_count": 10,
+      "reuse_rate": 0.0538
+    },
+    {
+      "timestamp": "2025-11-06 14:32:03",
+      "case_count": 187,
+      "reuse_count": 10,
+      "reuse_rate": 0.0535
+    },
+    {
+      "timestamp": "2025-11-06 14:32:22",
+      "case_count": 188,
+      "reuse_count": 10,
+      "reuse_rate": 0.0532
+    },
+    {
+      "timestamp": "2025-11-06 14:32:22",
+      "case_count": 188,
+      "reuse_count": 10,
+      "reuse_rate": 0.0532
+    },
+    {
+      "timestamp": "2025-11-06 14:32:43",
+      "case_count": 189,
+      "reuse_count": 10,
+      "reuse_rate": 0.0529
+    },
+    {
+      "timestamp": "2025-11-06 14:32:43",
+      "case_count": 189,
+      "reuse_count": 10,
+      "reuse_rate": 0.0529
+    }
+  ]
+}

@@ -1,0 +1,2690 @@
+[
+  {
+    "id": 1984791,
+    "type": "defect",
+    "summary": "Private browsing domains exposed in \"Manage Cookies and Site Data\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1981376,
+    "type": "task",
+    "summary": "Move gPrivateBrowsingUI to its own file and avoid loading it unless/until we encounter our first private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1977140,
+    "type": "defect",
+    "summary": "--private-window command line option malfunctions",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1973462,
+    "type": "defect",
+    "summary": "Private browsing data in parent process not released quickly under some circumstances",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1972238,
+    "type": "defect",
+    "summary": "If you open a private window and close the main instance of Firefox, closing the private window erases all the previous active pages in the main instance.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1960507,
+    "type": "defect",
+    "summary": "Private Browsing Mode cannot be toggled after activating user.js or policies.json",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1957207,
+    "type": "defect",
+    "summary": "The -private command line argument doesn't open Firefox in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1956430,
+    "type": "defect",
+    "summary": "When closing Firefox while having opened a private Window, if a new non-private window is lost, the session is lost",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1952110,
+    "type": "task",
+    "summary": "Remove or update probes expiring in Firefox 139: aboutprivatebrowsing.click#click before Gecko version gets increased to 139 on 2025-03-31",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1946761,
+    "type": "defect",
+    "summary": "It is possible to save a tab group in private browsing mode and restore it in non-private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1946758,
+    "type": "defect",
+    "summary": "Saved tab groups appear in the TOM menu in private windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1942025,
+    "type": "defect",
+    "summary": "The CSP of about:privatebrowsing is too permissive",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1932555,
+    "type": "defect",
+    "summary": "Private Browsing tabs can open in normal browsing during PBM teardown",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1929945,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1929737,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1925682,
+    "type": "defect",
+    "summary": "New Private Window doesn't work - I get the normal window instead",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1922596,
+    "type": "task",
+    "summary": "Remove or update probes expiring in Firefox 134: aboutprivatebrowsing.click#click before Gecko version gets increased to 134 on 2024-10-28",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1919363,
+    "type": "defect",
+    "summary": "Hide app menu new private window in permanent private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1916946,
+    "type": "defect",
+    "summary": "Remove or update metrics expiring in Firefox 133: private_browsing.window_open_during_teardown",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1914573,
+    "type": "defect",
+    "summary": "Cookie does not clear upon exiting browser while private browser is also open",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1908979,
+    "type": "defect",
+    "summary": "Opening a site in a private tab from an external command loads it in a container tab in private browsing.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1908448,
+    "type": "task",
+    "summary": "[meta] Private window changes for tab groups",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1907059,
+    "type": "defect",
+    "summary": "Intermittent browser/base/content/test/privateBrowsing/browser_private_browsing_simplified_ui.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1905032,
+    "type": "task",
+    "summary": "Collect telemetry for PBM exit race condition (Bug 1900840)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1902686,
+    "type": "task",
+    "summary": "Enable the reset pbm feature for release",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1901840,
+    "type": "defect",
+    "summary": "browser.privateWindowSeparation.enabled broken in Firefox 127",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1901305,
+    "type": "enhancement",
+    "summary": "Add UI option to disable dark theme in private windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1894351,
+    "type": "defect",
+    "summary": "Firefox reopens a URL from a past session after closing session then opening Firefox Private.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1893393,
+    "type": "defect",
+    "summary": "If I have Firefox set to always use Private Browsing, I never get the private browsing disclaimer or reference link",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1891450,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_cleanup.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1891297,
+    "type": "defect",
+    "summary": "browser.tabs.warnOnClose not respected in Private Browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1884019,
+    "type": "enhancement",
+    "summary": "\"confirm before closing multiple tabs\" should apply to private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1883140,
+    "type": "enhancement",
+    "summary": "Remove bookmark toolbar suppression requirement from private window redesign",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1882726,
+    "type": "defect",
+    "summary": "Firefox 123.0, Windows 11, Bookmarks Toolbar Always Show does not work anymore",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1881963,
+    "type": "defect",
+    "summary": "Every page change makes the Bookmark toolbar disappear despite the checkbox being checked to always display",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1881850,
+    "type": "defect",
+    "summary": "Bookmarks Bar not showing in Private Mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1880230,
+    "type": "defect",
+    "summary": "An empty overflow menu is displayed in Normal Browsing if the End Private Session button is added to the Overflow Menu in Private Session",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1877735,
+    "type": "defect",
+    "summary": "The End Private Session button is not restored after restoring defaults while the normal browsing window is opened and the browser was not restarted",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1875048,
+    "type": "defect",
+    "summary": "\"Clear cookies and site data\" from the address bar does not work in private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1874053,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_protocolhandler.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1873325,
+    "type": "enhancement",
+    "summary": "Set focus in address bar when starting Firefox in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1871197,
+    "type": "task",
+    "summary": "Remove or update probes expiring in Firefox 124: aboutprivatebrowsing.click#click before Gecko version number gets increased to 124 on 2024-01-22",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1870709,
+    "type": "enhancement",
+    "summary": "[meta] Add support for multiple private browsing mode ids",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1870239,
+    "type": "enhancement",
+    "summary": "Reopen current tab in private browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1869987,
+    "type": "defect",
+    "summary": "Firefox on macOS: Closing the last browser window does not clear history when in always private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1868770,
+    "type": "defect",
+    "summary": "PerformanceEventTimeing.cpp may not be clamping/jittering in all circumstances when RFP is enabled",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1868608,
+    "type": "defect",
+    "summary": "Container are opened in private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1867069,
+    "type": "defect",
+    "summary": "New tab opened by reset PBM feature uses `BROWSER_NEW_TAB_URL` which may be overwritten by extensions",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1865600,
+    "type": "defect",
+    "summary": "opening a new private window shows the old private window start page for a moment with browser.privatebrowsing.felt-privacy-v1, causing a bad perceived performance",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1864876,
+    "type": "defect",
+    "summary": "[HCM] The private logo is not visible on the new private tab while on Windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1864485,
+    "type": "defect",
+    "summary": "Intermittent TV browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1864478,
+    "type": "defect",
+    "summary": "[HCM]  The new Search icon is not visible in PBM when a high contrast black theme is enabled on Windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862991,
+    "type": "defect",
+    "summary": "No event is displayed in the “about:telemetry” page when clicking the \"Who might be able to see my activity?\" hyperlink in PBM with the “feltPrivacy” feature enabled",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862972,
+    "type": "task",
+    "summary": "[META][QA][QA-2157] Feature Configuration testing for \"feltPrivacy\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862968,
+    "type": "task",
+    "summary": "Add a way to close tabs without them being recorded in the SessionStore",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862936,
+    "type": "defect",
+    "summary": "Pinned tabs don't get closed by PBM reset action",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862143,
+    "type": "defect",
+    "summary": "The \"End Private Session\" icon is not displayed if the restore defaults is made in a normal window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1862072,
+    "type": "defect",
+    "summary": "Intermittent MOZ_DIAGNOSTIC_ASSERT(mPendingBrowsingContext->UsePrivateBrowsing() == usePrivateBrowsing) [@ nsFrameLoader::EnsureBrowsingContextAttached] | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1861928,
+    "type": "defect",
+    "summary": "Icon Missing for \"End Private Session\" button in Customize Mode on Regular Windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1861606,
+    "type": "defect",
+    "summary": "[Ubuntu] Unchecked 'Always ask me' Checkbox Visibility and Hover Effect Issue",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1861215,
+    "type": "defect",
+    "summary": "Tabs can still be intermittently restored after pbm reset action",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1860566,
+    "type": "defect",
+    "summary": "seaart.ai website displays an empty page when Firefox history is set to \"Never Remember History\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1860452,
+    "type": "defect",
+    "summary": "Private Window not opening",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1860285,
+    "type": "defect",
+    "summary": "VoiceOver does not read the \"End your private session\" heading when navigating back to it",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1860261,
+    "type": "defect",
+    "summary": "In the Confirmation Panel  the NVDA reading is inaccurate and duplicated",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1859581,
+    "type": "defect",
+    "summary": "[HCM] The visibility of the text within the banners and the \"X\" button is reduced with the new private theme",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1859513,
+    "type": "task",
+    "summary": "Add a test for purging the SessionStore on PBM reset action",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858769,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_cookie_banners_promo.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858593,
+    "type": "defect",
+    "summary": "[HCM] The visibility of the focus ring on buttons in Private tab messages is reduced with the new theme",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858443,
+    "type": "defect",
+    "summary": "Pocket button is still accessible in Private Windows if placed in the Overflow Menu",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858431,
+    "type": "defect",
+    "summary": "Pocket button and Bookmarks toolbar are displayed in Private Window if the \"Restore Defaults\" from Customize page is clicked",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858405,
+    "type": "defect",
+    "summary": "Private tab displays the old background theme during site loading",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858183,
+    "type": "defect",
+    "summary": "Screen Reader Fails to Read Confirmation Dialog Text in 'End Private Session'",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858165,
+    "type": "defect",
+    "summary": "Cache data is not deleted after ending a private session in permanent browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858144,
+    "type": "defect",
+    "summary": "Tabs can be restored after deleting private session data",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858131,
+    "type": "defect",
+    "summary": "Intermittent data persistence in Private Session despite deleting session",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858113,
+    "type": "defect",
+    "summary": "\"End Private Session\" doesn't close the Sidebar",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1858110,
+    "type": "defect",
+    "summary": "The \"Delete Session Data\" button within the Confirmation dialog becomes truncated when the window is minimized",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1857519,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_resetPBM.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1857239,
+    "type": "task",
+    "summary": "[meta] Data Clearance Action in PBM: QA bug tracking",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1856896,
+    "type": "task",
+    "summary": "Enable browser.privatebrowsing.resetPBM.enabled in Nightly",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1856159,
+    "type": "defect",
+    "summary": "Not apply configured font in Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1855662,
+    "type": "defect",
+    "summary": "Close multiple tab confirmation dialog shows up on reset PBM action",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1854402,
+    "type": "task",
+    "summary": "[meta] Simplified Nav: Private Window Visual Refresh - QA bug tracking",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1854336,
+    "type": "defect",
+    "summary": "Notification permission automatically denied in Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1854171,
+    "type": "task",
+    "summary": "Add ftl string(s) for felt privacy pref",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853909,
+    "type": "defect",
+    "summary": "Typo in about:privatebrowsing new copy",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853763,
+    "type": "task",
+    "summary": "Add Nimbus feature to control browser.privatebrowsing.resetPBM.enabled",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853698,
+    "type": "task",
+    "summary": "Reset PBM feature telemetry",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853560,
+    "type": "defect",
+    "summary": "[felt] Private windows are partially broken with Pocket button removed from toolbar",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853204,
+    "type": "task",
+    "summary": "[meta] Desktop Felt Privacy v1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1853192,
+    "type": "task",
+    "summary": "Set up Felt Privacy v1 Nimbus experiment client code",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1852737,
+    "type": "enhancement",
+    "summary": "Firefox provides no equivalent to -new-window to open a url in a new private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1852607,
+    "type": "task",
+    "summary": "Update info copy in about:privatebrowsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1852438,
+    "type": "defect",
+    "summary": "Notifications silently stopped working in permanent private browsing mode even when explicitly allowed",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1851789,
+    "type": "defect",
+    "summary": "Some permissions not prompting user in Private Browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1851207,
+    "type": "enhancement",
+    "summary": "private browsing invocation",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1851163,
+    "type": "task",
+    "summary": "Remove obsolete felt privacy (2022) prefs",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1849740,
+    "type": "defect",
+    "summary": "Remove no-op font-size for about:privatebrowsing info text body",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1849333,
+    "type": "defect",
+    "summary": "Forcing restart while user has open private windows will not restore private windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1849186,
+    "type": "defect",
+    "summary": "Browsing history leaked to syslogs via GNOME",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1848754,
+    "type": "defect",
+    "summary": "Private windows don't follow system theme preference",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1847102,
+    "type": "task",
+    "summary": "Align private browsing theme & New Tab background color across platform",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1847023,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_beacon.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846584,
+    "type": "enhancement",
+    "summary": "[meta] Felt Privacy Simplified UI",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846583,
+    "type": "enhancement",
+    "summary": "Remove pocket button and bookmarks bar from PBM",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846579,
+    "type": "enhancement",
+    "summary": "disable Firefox Suggest when in PBM and add setting to re-enable",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846498,
+    "type": "enhancement",
+    "summary": "Create a button and panel for restarting the PBM session",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846495,
+    "type": "task",
+    "summary": "[meta] Desktop data clearance action in PBM",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1846320,
+    "type": "task",
+    "summary": "Update Firefox logo in private mode and add “Private” label",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1844191,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_noSessionRestoreMenuOption.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1843730,
+    "type": "enhancement",
+    "summary": "Standardize \"new window\" behaviour",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1842941,
+    "type": "defect",
+    "summary": "3p prefetch cache may not be sanitized or memory-only per session",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1842340,
+    "type": "defect",
+    "summary": "Intermittent application crashed [@ js::jit::BaselineScript::retAddrEntryFromReturnAddress] | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1842030,
+    "type": "defect",
+    "summary": "After closing the last Private Window, context is not always reset/cleared...",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1841778,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_favicon.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1841399,
+    "type": "defect",
+    "summary": "New Private Tab ignores \"New Tab Shows blank page\" setting",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1841088,
+    "type": "defect",
+    "summary": "Frequent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_promo.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1840080,
+    "type": "defect",
+    "summary": "When i tried to open New Private window(Ctrl + Shift + p), And opened Youtube but i saw that there is also login by account but if we open Private window then there is no need to show account with logged in..",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1838559,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_zoomrestore.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1835835,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_placesTitleNoUpdate.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1835827,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_placesTitleNoUpdate.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1835036,
+    "type": "defect",
+    "summary": "New Private Window shortcut not working",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1834107,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_pin_promo.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1834098,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_pin_promo.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1833437,
+    "type": "enhancement",
+    "summary": "Firefox sync doesn't remember addons' private tab settings",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1831130,
+    "type": "enhancement",
+    "summary": "Make browser_privatebrowsing_about_nimbus_impressions.js more robust",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1829483,
+    "type": "defect",
+    "summary": "Videos cannot enter full screen in private windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1829295,
+    "type": "defect",
+    "summary": "Page is stuck in a loading state at online.aami.com.au when navigating in PRIVATE BROWSING mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1829131,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1828921,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | application crashed [@ -[NSScreenDisplayLink _fire]]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1828901,
+    "type": "defect",
+    "summary": "Live streaming does not play at la7.it when navigating in PRIVATE BROWSING Mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1828794,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus_dismiss.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1828765,
+    "type": "defect",
+    "summary": "Frequent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus_impressions.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1827355,
+    "type": "defect",
+    "summary": "Browsing in private not supported on nknews.org",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1826842,
+    "type": "defect",
+    "summary": "Visiting discord.gg invite link bypasses private browsing due to its local server",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1826350,
+    "type": "defect",
+    "summary": "PRIVATE BROWSING Mode is not supported at doctolib.de",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1823872,
+    "type": "defect",
+    "summary": "Normal windows are opened instead of Private windows if ‘Never Remember History’ is set.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1823447,
+    "type": "defect",
+    "summary": "Non-private windows are displaying under private taskbar icon",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1823155,
+    "type": "enhancement",
+    "summary": "First private window shares cookies/settings with second private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1820446,
+    "type": "defect",
+    "summary": "Title: Social Media (Facebook) login information remains in Firefox normal mode despite logging out in private mode.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1819858,
+    "type": "defect",
+    "summary": "Always private mode stores website data and writes to disk",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1817165,
+    "type": "defect",
+    "summary": "A cookie issue in Private Browsing on 111.0b1 and 112.0a1 (2023-02-15) (macOS)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1815772,
+    "type": "defect",
+    "summary": "Intermittent TV [tier 2] browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_search_banner.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1813159,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus_messaging.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1811399,
+    "type": "defect",
+    "summary": "firefox.exe -private-window doesn't launch a private window if there's a non-private window open",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1808306,
+    "type": "defect",
+    "summary": "Location/language window pops-up everytime the page gets refreshed on costco.ca in Private",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1807695,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_zoom.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1806688,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1806628,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_rememberprompt.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1806429,
+    "type": "defect",
+    "summary": "WhatsApp Web login repeatedly refreshes on Firefox 108.0.1 (64-bit)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1806239,
+    "type": "enhancement",
+    "summary": "Add an option to open a private tab instead of window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1805244,
+    "type": "defect",
+    "summary": "Allowing an extension requiring clipboard access to run in private windows affects its clipboard access in regular windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1804152,
+    "type": "defect",
+    "summary": "Auto-downloaded PDF getting deleted after exiting Private Mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1803185,
+    "type": "defect",
+    "summary": "tooltips are illegible in private-browsing (white text on pale yellow)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1800140,
+    "type": "defect",
+    "summary": "don't create private browsing shortcuts at runtime when private browsing is disabled by policy",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1799378,
+    "type": "defect",
+    "summary": "New Window from bookmark while in private windows groups with non-private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1798819,
+    "type": "defect",
+    "summary": "Nightly icon on Windows is using private browsing icon even when not in PBM",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1798639,
+    "type": "defect",
+    "summary": "Firefox in normal mode appears in the taskbar with private mode icon",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1798566,
+    "type": "enhancement",
+    "summary": "colors of private window changed",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1798222,
+    "type": "enhancement",
+    "summary": "Private window label \"eats\" too much space",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1797806,
+    "type": "defect",
+    "summary": "New private browsing mode doesn't honor the DisablePrivateBrowsing policy",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1797226,
+    "type": "defect",
+    "summary": "Updates removing -private and -private-window switches from taskbar icon",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1796909,
+    "type": "enhancement",
+    "summary": "Separate taskbar icon for private browsing is a privacy risk",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1795999,
+    "type": "enhancement",
+    "summary": "Private browsing mode always-on suggestion",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1792548,
+    "type": "defect",
+    "summary": "On x32 builds when the pinned Private Window icon is clicked another icon appears next to it",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1792547,
+    "type": "defect",
+    "summary": "When Private Window is pinned to the Taskbar the icon transforms into a normal icon",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1792546,
+    "type": "defect",
+    "summary": "If you pin Private Window to taskbar/Start Menu from the installation folder the title for it is “private_browsing”",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1792047,
+    "type": "defect",
+    "summary": "Private windows open in some sort of \"Dark\" mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1791963,
+    "type": "defect",
+    "summary": "Old Firefox Private Browsing icon is displayed at search on Windows start menu.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1791270,
+    "type": "defect",
+    "summary": "Ctrl+Shift+P Privacy mode automatically opens in kiosk mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1791161,
+    "type": "defect",
+    "summary": "Firefox Private icon is not localized for Spanish build on Start menu.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1790147,
+    "type": "defect",
+    "summary": "[foxfooding] Private Browsing window isn't on dark theme",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1789991,
+    "type": "defect",
+    "summary": "Two Firefox Private icons are displayed on All Programs menu.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1789985,
+    "type": "defect",
+    "summary": "[Locale] The name is not translated if PBM icon is pinned to taskbar",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1789789,
+    "type": "defect",
+    "summary": "Firefox not supported on t-mobile.com in Private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1789021,
+    "type": "defect",
+    "summary": "[foxfooding] Private Browsing window does not respect Light desktop theme",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1789019,
+    "type": "defect",
+    "summary": "[foxfooding] Cannot open a regular tab from within the private browser",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1788948,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1788920,
+    "type": "task",
+    "summary": "Convert browser/actors/AboutPrivateBrowsing* JSM modules to ESMs",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1788629,
+    "type": "defect",
+    "summary": "Notification permissions are retained across private browsing windows if you don't close all of Firefox",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1787121,
+    "type": "defect",
+    "summary": "[Localization] Private Browsing icon remains on Start menu after uninstall for localized builds.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1786450,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_focus_promo.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1786320,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_oa_private_browsing_window.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1785108,
+    "type": "defect",
+    "summary": "Ctrl+Shift+P hotkey for New Private Windows not Working",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1784966,
+    "type": "enhancement",
+    "summary": "Encrypt blob files under idb/*.files directory with a separate cipher key",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1783617,
+    "type": "defect",
+    "summary": "[Bug]: firefox does not protect from fingerprinting can be detected that it is in incognito",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1783235,
+    "type": "enhancement",
+    "summary": "Update the about:privatebrowsing logos",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1781909,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1780231,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | Test timed out | | Found a browser window after previous test timed out",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1779280,
+    "type": "defect",
+    "summary": "Still possible to open windows at about:privatebrowsing from the Windows Task Tray menu when in perma-PB mode.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1779055,
+    "type": "enhancement",
+    "summary": "Change private browsing new tab title to \"New Private Tab\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1778927,
+    "type": "defect",
+    "summary": "open private window keyboard shortcut doesn't work when primary window is minimized",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1778813,
+    "type": "defect",
+    "summary": "ameblo blog the right side pane(Profile, Follow Me, Recent Entries, Theme and Calendar etc..) are missing in Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1775959,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1775958,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_cleanup.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1775957,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1773852,
+    "type": "defect",
+    "summary": "\"firefox -private <URL>\" opens the URL in a non-private tab if a non-private firefox tab is already open",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1773719,
+    "type": "enhancement",
+    "summary": "Add a panel for the private browsing  badge button with a restart PBM session feature",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1773715,
+    "type": "enhancement",
+    "summary": "Update private browsing indicator to include a label",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1772801,
+    "type": "defect",
+    "summary": "Able to reopen closed Private tab while the private window it was in remains open",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1771957,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus.js | application crashed [@ nsFrameLoader::EnsureBrowsingContextAttached()]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1770872,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_focus_promo.js | Focus promo is shown for allowed region - null == true - got null, expected true (operator ==)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1770820,
+    "type": "defect",
+    "summary": "Intermittent [tier 2] browser/components/privatebrowsing/test/browser/browser_privatebrowsing_cleanup.js | Test timed out - | Uncaught exception received from previously timed out test - focus listener not removed before the end of test",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1769800,
+    "type": "defect",
+    "summary": "Private mode ignores browser.fixup.alternate.enabled = false",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1768441,
+    "type": "defect",
+    "summary": "Initial findbar value in private tab",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1768395,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_promo.js | Focus promo is not shown in a new tab after being dismissed in another tab - false == true - got false, expected true (operator ==)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1768306,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_promo.js | Uncaught exception in test - at resource://specialpowers/SpecialPowersChild.jsm:313 - TypeError: ChromeUtils.getClassName: Argument 1 is not an o",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1768295,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_promo.js | Uncaught exception in test - AbortError: Actor 'SpecialPowers' destroyed before query 'EnsureFocus' was resolved",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1767813,
+    "type": "defect",
+    "summary": "Intermittent TV browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_default_promo.js | Focus promo is not shown in a new tab after being dismissed in another tab - false == true - got false, expected true (operator ==)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1765792,
+    "type": "defect",
+    "summary": "Intermittent layout/forms/test/test_bug536567_perwindowpb.html | single tracking bug",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1764639,
+    "type": "defect",
+    "summary": "Perma Beta browser/components/privatebrowsing/test/browser/browser_privatebrowsing_focus_promo.js | Uncaught exception in test - at chrome://<...>/browser_privatebrowsing_focus_promo.js:59 - TypeError: ASRouter.resetMessageState is not a function",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1763987,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_focus_promo.js | A promise chain failed to handle a rejection: this.document.l10n is null - stack: _updateSearchModeUI@resource:///modules/UrlbarInput.jsm:2734:7",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1763110,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_focus_promo.js | A promise chain failed to handle a rejection: can't access property \"setAttributes\", this.document.l10n is null - stack: _updateSearchModeUI@resource://",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1761349,
+    "type": "defect",
+    "summary": "Blob images doesn't render in a new tab in private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1759407,
+    "type": "enhancement",
+    "summary": "http site only and infinite loop redirection when in private mode.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1757429,
+    "type": "enhancement",
+    "summary": "Open external links in private *in current tab*",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1753899,
+    "type": "defect",
+    "summary": "Extension won't load properly if Firefox launched in private mode first",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1752587,
+    "type": "defect",
+    "summary": "Costco warehouse locator does not work in private browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1751928,
+    "type": "defect",
+    "summary": "Intermittent TV browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus.js | After filtering we must have the expected number of events. - 0 == 1 - JS frame :: resource://testing-common/TelemetryTestUtils.jsm :: assertEvents :",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1751628,
+    "type": "defect",
+    "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | std::__pop_heap<T>]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1749126,
+    "type": "defect",
+    "summary": "Jpg not erased in %tmp%",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1747111,
+    "type": "enhancement",
+    "summary": "make permanent private browsing a real setting",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1746326,
+    "type": "defect",
+    "summary": "https only temporary exception state does not clear after private tabs are closed",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1743486,
+    "type": "enhancement",
+    "summary": "more cut over for resistfingerprinting API:  UseStandinsForNativeColors and Appwindow",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1742906,
+    "type": "enhancement",
+    "summary": "consider making Private windows use Strict ETP by default",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1741882,
+    "type": "defect",
+    "summary": "archive.org URL searches do not work in private browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1740604,
+    "type": "defect",
+    "summary": "popup blocker exceptions no longer works in 91.3 oesr",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1739921,
+    "type": "enhancement",
+    "summary": "Add customization settings for private mode home page content",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1739742,
+    "type": "defect",
+    "summary": "How to hide default screen size in Firefox?",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1738445,
+    "type": "task",
+    "summary": "Tabs can open outside of incognito window.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1737039,
+    "type": "defect",
+    "summary": "Private browsing cookies not clearing when closing window and opening a new one",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1734398,
+    "type": "defect",
+    "summary": "Running with the --private flag on Windows removes the private browsing icon from the top right",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1733835,
+    "type": "defect",
+    "summary": "Whenever I open a New private window from the taskbar, it always says \"about:privatebrowsing\" in the Start Tab...",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1732475,
+    "type": "defect",
+    "summary": "Perma browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | application crashed [@ mozalloc_handle_oom(unsigned int)] | application terminated with exit code 1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1732439,
+    "type": "defect",
+    "summary": "Intermittent [tier 2] browser/components/privatebrowsing/test/browser/browser_oa_private_browsing_window.js | Test timed out | Found a tab after previous test timed out: about:blank",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1730502,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1728552,
+    "type": "defect",
+    "summary": "Click on link, nothing happens when private browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1726718,
+    "type": "defect",
+    "summary": "Event Processing crashes and prevents Links from working in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1726592,
+    "type": "defect",
+    "summary": "Notification in private mode from an app in non private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1726550,
+    "type": "defect",
+    "summary": "\"Try Mozilla VPN\" button on about:privatebrowsing has low contrast when hovered in dark mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1726023,
+    "type": "defect",
+    "summary": "Intermittent components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1723871,
+    "type": "defect",
+    "summary": "Firefox 90.0.2 does not ask before closing when multiple tabs are open in a private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1722855,
+    "type": "enhancement",
+    "summary": "No confirmation dialog for closing the window in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1720369,
+    "type": "defect",
+    "summary": "Switch to Tab option appears in Private window for non-Private Tab Using Search Shortcut",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1720299,
+    "type": "defect",
+    "summary": "The look of a new tab in private window when opening from bookmark isn't the same as when opening a new private window from the hamburger menu",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1720057,
+    "type": "enhancement",
+    "summary": "Search Suggestions in Private Browsing Include History from Non-Private-Browsing Sessions",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1719970,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_downloadLastDir_c.js | application crashed [@ ___NSRunLoopTimerCreateWithHandler_block_invoke + 0x22]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1718946,
+    "type": "defect",
+    "summary": "Private mode is not private",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1718793,
+    "type": "defect",
+    "summary": "Intermittent win7-32-qr browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | Test timed out - | A promise chain failed to handle a rejection: undefined - stack: (No stack available.)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1718494,
+    "type": "enhancement",
+    "summary": "New windows opened from Private windows should alert users they are non-Private",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1718063,
+    "type": "defect",
+    "summary": "<form method=post> in HTTP-only site make GET request when private browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1718008,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1717931,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | application terminated with exit code 1 | application crashed [@ xul.dll + 0x17416b]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1717855,
+    "type": "defect",
+    "summary": "Sites are not usable in a Private Window / Browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1717696,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_popupblocker.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1716890,
+    "type": "defect",
+    "summary": "Intermittent browser/base/content/test/general/browser_bug495058.js | about:privatebrowsing: browser is focused - {} == [object XULFrameElement] - JS frame :: chrome://mochitests/content/browser/browser/base/content/test/general/browser_bug495058.js",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1713981,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1713731,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_nimbus.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1709359,
+    "type": "defect",
+    "summary": "Try Mozilla VPN link should be hidden from about:privatebrowsing when opened in a non-private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1708434,
+    "type": "defect",
+    "summary": "Launching private browsing via taskbar causes new tabs to show non private homepage",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1707684,
+    "type": "enhancement",
+    "summary": "When Firefox is updated with a unique private window the normal session is opened",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1707672,
+    "type": "defect",
+    "summary": "Private browsing cancels downloads in progress if about:downloads (ctrl+J) is the last tab",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1706753,
+    "type": "enhancement",
+    "summary": "feature: bookmark flag to only open bookmark in private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1705782,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1704200,
+    "type": "enhancement",
+    "summary": "Allow to disable private browsing on a per profile basis",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1703733,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_favicon.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1702320,
+    "type": "defect",
+    "summary": "Focus issues when starting Firefox in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1702290,
+    "type": "defect",
+    "summary": "Camera Permission Propagation in Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1701814,
+    "type": "defect",
+    "summary": "Popup exceptions set via about:preferences do not apply to private browsing windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1701626,
+    "type": "enhancement",
+    "summary": "about:privatebrowsing - TAB select should reach the in-page [Try Mozilla VPN] link",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1700636,
+    "type": "enhancement",
+    "summary": "Consider informing about/promoting ETP strict level features on about:privatebrowsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1700527,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1699840,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1696274,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_crh.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1696273,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_crh.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1694520,
+    "type": "defect",
+    "summary": "Dragging images from websites with access control to Explorer results in a 403 page being saved instead",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1694026,
+    "type": "enhancement",
+    "summary": "Make private tabs truly private by sandboxing each separately.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1692567,
+    "type": "defect",
+    "summary": "Accessing a site in Private Browsing can cause that site's non-private session to be logged out in 24 hours",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1691546,
+    "type": "defect",
+    "summary": "Website Login credentials leak from one Private Window to another Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1690815,
+    "type": "enhancement",
+    "summary": "Feature request: \"Reload in private browsing\" option that scrubs recent & related history.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1690535,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1687581,
+    "type": "enhancement",
+    "summary": "Save open windows & tabs in Private Browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1687359,
+    "type": "task",
+    "summary": "Load about:privatebrowsing in the privileged about content process",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1683071,
+    "type": "defect",
+    "summary": "firefox causes high ram and cpu use after closing private browsing linkedin.com pages",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1680650,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-FAIL | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_sidebar.js | Test timed out | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1680301,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_rememberprompt.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1675660,
+    "type": "defect",
+    "summary": "Permanent private browsing new tab pages should have a consistent tab title (either always \"New Tab\" or always \"Private Browsing\")",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1672910,
+    "type": "defect",
+    "summary": "When Firefox starting in normal browsing mode, is shown \"Private Window\" theme a moment",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1672775,
+    "type": "defect",
+    "summary": "Firefox snap is choppy when two windows are open",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1668830,
+    "type": "defect",
+    "summary": "Intermittent TV tier 2 browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_search_banner.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1667746,
+    "type": "defect",
+    "summary": "Private Browsing Not working",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1666999,
+    "type": "defect",
+    "summary": "Certificate of private tab displayed in a non-private tab",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1664104,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_placesTitleNoUpdate.js | Test timed out -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1663111,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_concurrent.js | public window should only see public items - Got \"0\", expected \"1\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1661050,
+    "type": "defect",
+    "summary": "Update utm_medium value of VPN link to be dynamic",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1660206,
+    "type": "task",
+    "summary": "Leaking information about visited websites in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1659956,
+    "type": "task",
+    "summary": "About:privatebrowsing should have a link to the VPN",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1659613,
+    "type": "enhancement",
+    "summary": "Add link from Private Browsing to VPN",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1659547,
+    "type": "defect",
+    "summary": "i'm using a latest version of Firefox when i'm checking websites in private window it's caching and i need to make hard refresh to check changes that i done to a website.  Component: \"General\"  OS: windows:, 10 Build ID - 20200720193547",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1659289,
+    "type": "defect",
+    "summary": "After closing the last Private Window, context is not always reset (followup to bug 1585306)",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1659153,
+    "type": "defect",
+    "summary": "web recording (remember this decision) preference stays in private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1655979,
+    "type": "enhancement",
+    "summary": "Hide private browsing mode in Firefox",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1655260,
+    "type": "enhancement",
+    "summary": "Option to always open certain sites using private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1653670,
+    "type": "defect",
+    "summary": "Website gives SSL_ERROR_NO_CYPHER_OVERLAP when in private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1652915,
+    "type": "defect",
+    "summary": "full screen mode of streaming charts at in.investing.com not working in firefox browser in private window due to referrer being stripped to origin",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1650169,
+    "type": "enhancement",
+    "summary": "Use purple private browsing tint in more places when in private browsing mode, like on mobile Firefox",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1647105,
+    "type": "task",
+    "summary": "Bing search terms shared across Private Windows in MacOS",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1643480,
+    "type": "enhancement",
+    "summary": "From a new tab of an anonymous window it is possible to trace the addresses visited in the various anonymous windows with CTRL + Z",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1641394,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | Uncaught exception - at chrome://mochitests/content/browser/browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js:18 - TypeError: ca",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1640124,
+    "type": "defect",
+    "summary": "Private window not opening",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1638106,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | application timed out after 370 seconds with no output",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1637096,
+    "type": "defect",
+    "summary": "firefox 76.0.1 incognito mode storing cookies",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1635017,
+    "type": "defect",
+    "summary": "Websites can detect private windows",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1634241,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about_search_banner.js | Uncaught exception - [Exception... \"(null)\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: \"<unknown>\"  data: no]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1633862,
+    "type": "defect",
+    "summary": "Opening a new private window from another won't always clear sessions",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1629412,
+    "type": "defect",
+    "summary": "Websites can detect private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1629142,
+    "type": "defect",
+    "summary": "Cache not cleared when closing Firefox in permanent private browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1627684,
+    "type": "defect",
+    "summary": "Private window clear popup cookie",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1627583,
+    "type": "defect",
+    "summary": "Private window saves my logins",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1627500,
+    "type": "enhancement",
+    "summary": "[Private Mode] In Dark Mode/Dark Theme the Search Bar should be shown in dark color",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1625723,
+    "type": "defect",
+    "summary": "FF opens New Private Window with ⇧⌘N only when other windows are minimized",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1625708,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_history_shift_click.js | leaked 1 window(s) until shutdown [url = chrome://browser/content/browser.xhtml]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1618783,
+    "type": "defect",
+    "summary": "Context menu mostly blank in window opened by -private-window command line option",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1618228,
+    "type": "defect",
+    "summary": "Last used zoomfactor is used in incognito mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1616313,
+    "type": "enhancement",
+    "summary": "Suggestion: Private Window/Tab with Tor - Brave",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1615415,
+    "type": "defect",
+    "summary": "Cookies are not deleted after closing Firefox in Private Mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1614744,
+    "type": "enhancement",
+    "summary": "Convert about:privatebrowsing to JSWindowActor",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1612733,
+    "type": "enhancement",
+    "summary": "Firefox - Keyboard Shortcuts: Force Ctrl + N to open a new Private Browsing Window if Activated from within a Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1612650,
+    "type": "defect",
+    "summary": "Shift clicking navigation buttons in private browsing opens content in non-private browsing window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1609873,
+    "type": "task",
+    "summary": "Make about:privatebrowsing an HTML page",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1607296,
+    "type": "defect",
+    "summary": "Private Browsing Window data kept in parent process memory after closing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1605392,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | Clicking private-browsing-myths opened https://example.com/private-browsing-myths in the same tab. - Got about:privatebrowsing, expected https://example.com",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1604400,
+    "type": "defect",
+    "summary": "opening rss feed while inprivate window causes feed to be opened in non-private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1604272,
+    "type": "enhancement",
+    "summary": "Don't allow opening a site specific browser from a private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1603937,
+    "type": "defect",
+    "summary": "High frequency TV browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js | Uncaught exception - [Exception... \"(null)\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: \"<unknown>\"  data: no]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1603936,
+    "type": "defect",
+    "summary": "Perma TV browser/base/content/test/about/browser_aboutCertError_mitm.js | Uncaught exception - Loads the MitM error page. - threw exception: [Exception... \"(null)\" nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\" location: \"<unknown>\" data: no]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1600489,
+    "type": "defect",
+    "summary": "Private browsing window option & button not working",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1600252,
+    "type": "defect",
+    "summary": "privacy.resistFingerprinting breaks https://web.whatsapp.com/",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1599361,
+    "type": "defect",
+    "summary": "SHIFT-CTRL-N opens recently closed private window, including url",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1598290,
+    "type": "defect",
+    "summary": "Command line -private / -private-window with --search parameter doesn't start a private session",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1597849,
+    "type": "task",
+    "summary": "Dehardcode browser_privatebrowsing_windowtitle.js test",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1597048,
+    "type": "defect",
+    "summary": "Intermittent browser/browser_privatebrowsing_windowtitle.js | Uncaught exception - Window title should be Test title - Mozilla Firefox (Private Browsing), got Mozilla Firefox (Private Browsing) - timed out after 50 tries.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596987,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage.js | localStorage should contain 2 items - Got , expected 2",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596976,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage_before_after.js | localStorage should contain 1 item - Got , expected 1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596968,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage_before_after.js | localStorage should contain 1 item - Got , expected 1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596389,
+    "type": "defect",
+    "summary": "Intermittent mochitest <test-name> | application crashed [@ __abort_with_payload + 0xa]",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596272,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | Uncaught exception - Window title should be Test title - [brand name] - got [brand name] - timed out after 50 tries.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596257,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | Uncaught exception - Window title should be Test title - Nightly, got Nightly - timed out after 50 tries.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596256,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | Uncaught exception - Window title should be Test title - Nightly (Private Browsing), got Nightly (Private Browsing) - timed out after 50 tries.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1596071,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_concurrent.js | private window should only see new private items - Got undefined, expected 1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595943,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_windowtitle.js | Uncaught exception - Window title should be Test title - Firefox Nightly Private Browsing got Firefox Nightly Private Browsing - timed out after 50 tries",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595923,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage_before_after.js | localStorage should contain X item - Got , expected X",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595918,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage.js | localStorage should contain 2 items - Got , expected 2",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595916,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_localStorage.js | localStorage should contain X items - Got , expected ...",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595897,
+    "type": "defect",
+    "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_concurrent.js | public window should only see public items - Got undefined, expected 1",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1595404,
+    "type": "defect",
+    "summary": "Downloads in Private Browsing kill entire window. \"TypeError: aBrowser is null\"",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1594719,
+    "type": "defect",
+    "summary": "about:privatebrowsing won't load properly (broken search bar and links) when first opening the profile with `-private` command line argument",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1594146,
+    "type": "defect",
+    "summary": "Firebase Remote Config error in firefox private mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592842,
+    "type": "defect",
+    "summary": "Intermittent TEST-UNEXPECTED-PASS | browser/components/privatebrowsing/test/browser/browser_privatebrowsing_context_and_chromeFlags.js | We expect at least one assertion to fail because this test file is marked as fail-if in the manifest. -",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592829,
+    "type": "task",
+    "summary": "Make browser_privatebrowsing_context_and_chromeFlags.js Fission compatible",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592824,
+    "type": "defect",
+    "summary": "Private Browsing mode stores favicons",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592695,
+    "type": "defect",
+    "summary": "Share Screen permission not enabled in Private Window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592544,
+    "type": "defect",
+    "summary": "Enable browser_privatebrowsing_about.js on Fission and test-verify",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592436,
+    "type": "enhancement",
+    "summary": "Provide a toggle for the search box in private browsing tabs",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1592217,
+    "type": "defect",
+    "summary": "The search field is buggy and broken in private mode via the jumplist",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1591706,
+    "type": "defect",
+    "summary": "Permafailing browser/components/privatebrowsing/test/browser/browser_privatebrowsing_newtab_from_popup.js | Test timed out -  when Gecko 72 merges to Beta on 2019-12-02",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1591325,
+    "type": "defect",
+    "summary": "Private Browsing no longer displays a close tab warning when closing out",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1591205,
+    "type": "enhancement",
+    "summary": "Feature Request: Containerized Private Browsing",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1590867,
+    "type": "defect",
+    "summary": "Occasional improperly colored searchbar in private mode.",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1589900,
+    "type": "defect",
+    "summary": "Search box in private browsing won't load any search engine if no other instances of Firefox are already running",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1588783,
+    "type": "defect",
+    "summary": "The fav icon of a webpage doesn't appear on the bookmark toolbar after bookmarking it. It only appears after reopening the browser",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1586753,
+    "type": "enhancement",
+    "summary": "Private Mode Detection",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1585575,
+    "type": "defect",
+    "summary": "Nasa TV page fails to show more videos in private window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1585306,
+    "type": "defect",
+    "summary": "After closing the last Private Window, context is not always reset...",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1579635,
+    "type": "enhancement",
+    "summary": "Private browsing start page doesn't respect \"Web Search\" \"Home Content\" setting",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1578948,
+    "type": "defect",
+    "summary": "Private Browsing should respect \"Home Content\" Web Search pref",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1578556,
+    "type": "defect",
+    "summary": "browser.privatebrowsing.searchUI does not work",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1576136,
+    "type": "defect",
+    "summary": "Intermittent LeakSanitizer | leak at Malloc, nsTArray_base, AppendElement, mozilla::net::CookieSettings::CookiePermission",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1574970,
+    "type": "defect",
+    "summary": "\"Common myths about private browsing\" link is not clickable when Firefox is started with --private-window",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1573167,
+    "type": "defect",
+    "summary": "Firefox displays wrong timezone in Gmail",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1572902,
+    "type": "defect",
+    "summary": "Disqus escapes the Private Browsing mode",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1570235,
+    "type": "defect",
+    "summary": "In private browsing, if the window is minimized the \"+\" button overlaps the \"<>\" buttons",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  },
+  {
+    "id": 1569111,
+    "type": "defect",
+    "summary": "Firefox Multi-Account Containers not working when Always use private browsing mode is activated",
+    "comp": "Private Browsing",
+    "product": "Firefox"
+  }
+]
