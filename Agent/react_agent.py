@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 from typing import List, Optional, Union
 from langchain_ollama import OllamaLLM
-from duckduckgo_search import DDGS
+from ddgs import DDGS  
 import json
 import warnings
 
@@ -27,7 +27,8 @@ def react_reasoning(user_feedback: str, collected: List[str]) -> AgentDecision:
     - generate a bug report directly, or
     - perform an online search (invokes online_search_agent)
     """
-    llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 128})
+    from Agent.react_agent import online_search_agent  # 避免循环导入
+    llm = OllamaLLM(model="gpt-oss:20b", options={"num_predict": 128})
 
     context = (
         f"User feedback:\n{user_feedback}\n\n"
@@ -37,53 +38,54 @@ def react_reasoning(user_feedback: str, collected: List[str]) -> AgentDecision:
     prompt = f"""
 You are a reasoning agent assisting in automated bug report generation.
 
-Thought: (analyze whether the collected information is sufficient)
-Action: (choose "generate" or "search")
-Observation: (explain your reasoning)
-Final Answer: (if generate, produce a structured bug report; if search, explain what to look for)
+Your task:
+1. Analyze whether the collected information is sufficient.
+2. Decide whether to "generate" a report directly or "search" for more data.
+3. Always include the word "generate" or "search" explicitly when making a decision.
 
 Now reason step by step:
 {context}
     """
 
     response = llm.invoke(prompt)
-    print("\nReAct reasoning trace:\n", response)
+    print("\n🧩 ReAct reasoning trace:\n", response)
 
-    # Extract key components
-    thought = next((l for l in response.splitlines() if l.startswith("Thought:")), None)
-    action = next((l for l in response.splitlines() if l.startswith("Action:")), None)
+    lower_resp = response.lower()
 
-    # Handle missing action
-    if not action:
-        return AgentDecision(action="none", rationale=thought)
-
-    # Case 1: Trigger online search
-    if "search" in action.lower():
-        print("\nReAct decided to perform online search...")
+    # Case 1: trigger online search
+    if "search" in lower_resp:
+        print("\n🧠 ReAct decided to perform online search...")
         search_decision = online_search_agent(user_feedback)
-        print(f"Online Search Decision: {search_decision.action}")
+        print(f"🔎 Online Search Decision: {search_decision.action}")
 
         if search_decision.action == "generate":
             return AgentDecision(
                 action="generate",
                 result=search_decision.combined_context,
-                rationale=f"{thought}\n(Online search summary used)",
-                combined_context=search_decision.combined_context
+                rationale=f"{response}\n(Used online search summary)",
+                combined_context=search_decision.combined_context,
+                raw_results_count=search_decision.raw_results_count
             )
         else:
             return AgentDecision(
                 action="store",
-                rationale=f"{thought}\n(Online search insufficient)",
-                combined_context=search_decision.combined_context
+                rationale=f"{response}\n(Online search insufficient)",
+                combined_context=search_decision.combined_context,
+                raw_results_count=search_decision.raw_results_count
             )
 
-    # Case 2: Directly generate
-    elif "generate" in action.lower():
-        final = response.split("Final Answer:", 1)[-1].strip()
-        return AgentDecision(action="generate", result=final, rationale=thought)
+    # Case 2: directly generate
+    elif "generate" in lower_resp:
+        final = response.split("Final Answer:", 1)[-1].strip() if "final answer:" in lower_resp else response.strip()
+        return AgentDecision(
+            action="generate",
+            result=final,
+            rationale=response
+        )
 
-    # Default fallback
-    return AgentDecision(action="none", rationale=thought)
+    # Fallback: no recognizable action
+    print("⚠️ ReAct reasoning produced no actionable decision.")
+    return AgentDecision(action="none", rationale=response)
 
 
 # ===================== Online Search Agent =====================
@@ -102,7 +104,10 @@ def search_online(query: str, max_results: int = 8) -> List[str]:
 
 def summarize_results(feedback: str, results: List[str]) -> str:
     """Summarize search results to extract likely causes or insights."""
-    llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 256})
+    if not results:
+        return "No relevant online results found."
+
+    llm = OllamaLLM(model="gpt-oss:20b", options={"num_predict": 128})
     combined_results = "\n".join(results[:8])
     prompt = f"""
 You are a software analysis assistant.
@@ -123,7 +128,8 @@ Summarize the relevant findings in concise technical English (2–4 sentences).
 
 def judge_relevance(feedback: str, summary: str) -> AgentDecision:
     """Ask the model whether the summary is relevant and sufficient."""
-    llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 128})
+    llm = OllamaLLM(model="gpt-oss:20b", options={"num_predict": 128})
+
     prompt = f"""
 You are an expert agent that decides whether the summarized online information
 is relevant and sufficient to help generate a structured bug report.
@@ -134,30 +140,43 @@ User feedback:
 Summary of online findings:
 {summary}
 
-Answer ONLY in JSON format with these fields:
+Answer ONLY in valid JSON format with these fields:
 {{
   "action": "generate" or "store",
   "rationale": "one-sentence reason why",
   "context": "if action is generate, combine feedback + summary for generation"
 }}
 """
+    print("🧠 Evaluating relevance of summarized findings...")
     response = llm.invoke(prompt)
 
+    # ✅ 提前清理非 JSON 部分，提取纯 JSON 主体
+    start_idx = response.find("{")
+    end_idx = response.rfind("}")
+    if start_idx != -1 and end_idx != -1:
+        cleaned_response = response[start_idx:end_idx + 1]
+    else:
+        cleaned_response = response
+
     try:
-        data = json.loads(response)
+        data = json.loads(cleaned_response)
         action = data.get("action", "store")
         rationale = data.get("rationale", "")
         combined_context = data.get("context", f"{feedback}\n\n{summary}")
+
+        print("✅ Successfully parsed JSON decision.")
         return AgentDecision(
             action=action,
             rationale=rationale,
             combined_context=combined_context
         )
-    except Exception:
-        print("⚠️ JSON parse failed, fallback to 'store'")
+
+    except Exception as e:
+        print(f"⚠️ JSON parse failed ({e}), fallback to 'store'")
+        print("⚠️ Raw model output:\n", response)
         return AgentDecision(
             action="store",
-            rationale=response,
+            rationale=cleaned_response,
             combined_context=f"{feedback}\n\n{summary}"
         )
 
@@ -170,7 +189,8 @@ def online_search_agent(feedback: str) -> AgentDecision:
     3. Summarize results
     4. Judge relevance & sufficiency
     """
-    query_llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 64})
+    print("\n===== 🧭 Entering online_search_agent() =====")
+    query_llm = OllamaLLM(model="gpt-oss:20b", options={"num_predict": 128})
 
     query_prompt = f"""
 You are an assistant that generates web search queries to find
@@ -198,6 +218,7 @@ Return them as a JSON list.
     for q in queries:
         print(" -", q)
 
+    # Step 2: Online search
     all_results = []
     for q in queries:
         all_results.extend(search_online(q, max_results=5))
@@ -205,13 +226,18 @@ Return them as a JSON list.
     all_results = list(set(all_results))
     print(f"✅ Retrieved {len(all_results)} unique results.")
 
+    # Step 3: Summarize results
     summary = summarize_results(feedback, all_results)
+
+    # Step 4: Judge relevance
     decision = judge_relevance(feedback, summary)
     decision.raw_results_count = len(all_results)
     decision.result = summary
 
+    # Final summary
     print("\n📊 ===== Online Search Agent Decision =====")
     print(f"Action: {decision.action}")
     print(f"Rationale: {decision.rationale}")
+    print(f"Raw results retrieved: {decision.raw_results_count}")
 
     return decision

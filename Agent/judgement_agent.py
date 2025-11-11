@@ -3,7 +3,7 @@ from langchain_ollama import OllamaLLM
 import json
 
 # Initialize lightweight model
-judgement_llm = OllamaLLM(model="llama3.2:3b", options={"num_predict": 64})
+judgement_llm = OllamaLLM(model="gpt-oss:20b", options={"num_predict": 128})
 
 def evaluate_candidate(feedback: str, candidate: str) -> dict:
     """

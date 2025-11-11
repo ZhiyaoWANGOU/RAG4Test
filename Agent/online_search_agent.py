@@ -2,7 +2,7 @@
 from dataclasses import dataclass
 from typing import List, Optional, Union
 from langchain_ollama import OllamaLLM
-from duckduckgo_search import DDGS
+from ddgs import DDGS
 import json
 import warnings
 
@@ -68,31 +68,43 @@ User feedback:
 Summary of online findings:
 {summary}
 
-Answer ONLY in JSON format with these fields:
+Answer ONLY in valid JSON format with these fields:
 {{
   "action": "generate" or "store",
   "rationale": "one-sentence reason why",
   "context": "if action is generate, combine feedback + summary for generation"
 }}
 """
+    print("🧠 Evaluating relevance of summarized findings...")
     response = llm.invoke(prompt)
 
-    # try to parse JSON
+    # ✅ 提前清理非 JSON 部分，提取纯 JSON 主体
+    start_idx = response.find("{")
+    end_idx = response.rfind("}")
+    if start_idx != -1 and end_idx != -1:
+        cleaned_response = response[start_idx:end_idx + 1]
+    else:
+        cleaned_response = response
+
     try:
-        data = json.loads(response)
+        data = json.loads(cleaned_response)
         action = data.get("action", "store")
         rationale = data.get("rationale", "")
         combined_context = data.get("context", f"{feedback}\n\n{summary}")
+
+        print("✅ Successfully parsed JSON decision.")
         return AgentDecision(
             action=action,
             rationale=rationale,
             combined_context=combined_context
         )
-    except Exception:
-        print("⚠️ JSON parse failed, fallback to 'store'")
+
+    except Exception as e:
+        print(f"⚠️ JSON parse failed ({e}), fallback to 'store'")
+        print("⚠️ Raw model output:\n", response)
         return AgentDecision(
             action="store",
-            rationale=response,
+            rationale=cleaned_response,
             combined_context=f"{feedback}\n\n{summary}"
         )
 

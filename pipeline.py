@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 
 """
-pipeline.py
-修正版：使用正确的 cosine similarity 计算逻辑
+retrieval_pipeline.py
+双层置信度检索（仅使用 summary 查询）→ 输出 agent 输入格式
 """
 
-import json, math, csv
+import json, math
 import numpy as np
 import chromadb
 from chromadb.utils import embedding_functions
@@ -16,17 +16,15 @@ DB_PATH = "./kb_index"
 LAYER1_NAME = "firefox_kb"
 LAYER2_NAME = "firefox_bugs"
 USER_FEEDBACK_PATH = "user_feedback.json"
-OUTPUT_CSV = "pipeline_results.csv"
-TOP_K = 10
-THRESHOLD_LOW = 0.75   # 若相似度均低于此阈值 -> 激活 Layer3
-BETA_BASE = 2.0        # 温度因子基值
+OUTPUT_PATH = "retrieved_feedbacks.jsonl"
+TOP_K = 10               # 每层先取前10
+FINAL_TOP_N = 5          # 最终取前5个融合结果
+THRESHOLD_LOW = 0.75
+BETA_BASE = 2.0
 
 # ====== 初始化客户端 ======
-print("🚀 Starting cosine-similarity pipeline...\n")
+print("🚀 Starting 2-layer retrieval (summary-only)...")
 client = chromadb.PersistentClient(path=DB_PATH)
-collections = [c.name for c in client.list_collections()]
-print("✅ Found collections:", collections)
-
 layer1 = client.get_collection(LAYER1_NAME)
 layer2 = client.get_collection(LAYER2_NAME)
 
@@ -35,7 +33,7 @@ with open(USER_FEEDBACK_PATH, "r", encoding="utf-8") as f:
     feedbacks = json.load(f)
 print(f"📥 Loaded {len(feedbacks)} feedback entries.\n")
 
-# ====== 函数定义 ======
+# ====== 工具函数 ======
 def compute_cosine_similarity(distances):
     """Chroma 返回的 cosine 距离 = 1 - cosine_similarity"""
     return [1 - d for d in distances]
@@ -43,58 +41,54 @@ def compute_cosine_similarity(distances):
 def adaptive_weights(s1, s2, alpha1=0.5, alpha2=0.5, beta_base=2.0):
     """根据相似度差异调整温度并计算权重"""
     diff = abs(s1 - s2)
-    beta = beta_base * diff * 5     # 放大因子 *5 让 β 落在 0.1~1.0 区间
+    beta = beta_base * diff * 5
     w1 = alpha1 * math.exp(beta * s1)
     w2 = alpha2 * math.exp(beta * s2)
     z = w1 + w2
     return w1/z, w2/z, beta
 
-
 # ====== 主循环 ======
-results = []
-layer3_count = 0
+with open(OUTPUT_PATH, "w", encoding="utf-8") as out:
+    for fb in feedbacks:
+        fid = fb["id"]
+        qtext = fb["summary"].strip()
+        if not qtext:
+            continue
 
-for fb in feedbacks:
-    qtext = f"{fb['title']} {fb['summary']}"
-    fid = fb["id"]
+        # --- Layer1 ---
+        res1 = layer1.query(query_texts=[qtext], n_results=TOP_K)
+        docs1 = res1["documents"][0]
+        sims1 = compute_cosine_similarity(res1["distances"][0])
+        s1 = max(sims1) if sims1 else 0.0
 
-    # --- Layer1 ---
-    res1 = layer1.query(query_texts=[qtext], n_results=TOP_K)
-    dists1 = res1["distances"][0]
-    sim1 = compute_cosine_similarity(dists1)
-    s1 = max(sim1) if sim1 else 0.0
+        # --- Layer2 ---
+        res2 = layer2.query(query_texts=[qtext], n_results=TOP_K)
+        docs2 = res2["documents"][0]
+        sims2 = compute_cosine_similarity(res2["distances"][0])
+        s2 = max(sims2) if sims2 else 0.0
 
-    # --- Layer2 ---
-    res2 = layer2.query(query_texts=[qtext], n_results=TOP_K)
-    dists2 = res2["distances"][0]
-    sim2 = compute_cosine_similarity(dists2)
-    s2 = max(sim2) if sim2 else 0.0
+        # --- 动态权重计算 ---
+        w1, w2, beta = adaptive_weights(s1, s2, beta_base=BETA_BASE)
 
-    # --- 权重计算 ---
-    w1, w2, beta = adaptive_weights(s1, s2, beta_base=BETA_BASE)
+        # --- 融合结果 + 加权得分排序 ---
+        combined = []
+        for doc, sim in zip(docs1, sims1):
+            combined.append({"text": doc, "score": w1 * sim})
+        for doc, sim in zip(docs2, sims2):
+            combined.append({"text": doc, "score": w2 * sim})
 
-    # --- Layer3 判断 ---
-    need_layer3 = s1 < THRESHOLD_LOW and s2 < THRESHOLD_LOW
-    if need_layer3:
-        layer3_count += 1
+        combined = sorted(combined, key=lambda x: x["score"], reverse=True)
+        retrieved_list = [x["text"].strip() for x in combined[:FINAL_TOP_N] if x["text"].strip()]
 
-    # --- 保存结果 ---
-    results.append({
-        "id": fid,
-        "w1": round(w1, 4),
-        "w2": round(w2, 4),
-        "s1": round(s1, 4),
-        "s2": round(s2, 4),
-        "beta": round(beta, 4),
-        "activate_layer3": int(need_layer3)
-    })
+        # --- 输出格式 ---
+        fid = str(fb["id"])
+        sample = {
+            "id": fid,
+            "user_feedback": qtext,
+            "retrieved_list": retrieved_list,
+            "weights": {"w1": round(w1, 4), "w2": round(w2, 4), "beta": round(beta, 4)},
+        }
 
-# ====== 写出 CSV ======
-with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
-    writer = csv.DictWriter(f, fieldnames=results[0].keys())
-    writer.writeheader()
-    writer.writerows(results)
+        out.write(json.dumps(sample, ensure_ascii=False) + "\n")
 
-print(f"✅ Done. Saved results to {OUTPUT_CSV}")
-print(f"📊 Total processed: {len(results)}")
-print(f"🚀 Layer3 triggered: {layer3_count} times.\n")
+print(f"✅ Saved retrieval results to {OUTPUT_PATH}")
