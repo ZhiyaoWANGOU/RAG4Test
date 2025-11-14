@@ -5,10 +5,8 @@ from Agent.react_agent import react_reasoning, online_search_agent
 from Agent.generated_memory import GeneratedReportMemory
 import os, json, time
 
-# =====================================================
-# 🧩 文件路径设置
-# =====================================================
-DATA_PATH = "retrieved_feedbacks.jsonl"
+
+DATA_PATH = "new_retrieved_feedbacks.jsonl"
 PROGRESS_FILE = "logs/experiment_progress.json"
 COUNTER_FILE = "logs/reuse_counter.json"
 LOG_DIR = "logs"
@@ -234,7 +232,7 @@ def main():
 
 if __name__ == "__main__":
     # ============ 自动运行全部反馈 ============
-    DATA_PATH = "retrieved_feedbacks.jsonl"
+    DATA_PATH = "new_retrieved_feedbacks.jsonl"
     with open(DATA_PATH, "r", encoding="utf-8") as f:
         lines = [json.loads(line) for line in f if line.strip()]
 

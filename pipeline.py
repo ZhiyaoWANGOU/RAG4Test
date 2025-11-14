@@ -15,8 +15,8 @@ from chromadb.utils import embedding_functions
 DB_PATH = "./kb_index"
 LAYER1_NAME = "firefox_kb"
 LAYER2_NAME = "firefox_bugs"
-USER_FEEDBACK_PATH = "user_feedback.json"
-OUTPUT_PATH = "retrieved_feedbacks.jsonl"
+USER_FEEDBACK_PATH = "structured_feedback.jsonl"
+OUTPUT_PATH = "new_retrieved_feedbacks.jsonl"
 TOP_K = 10               # 每层先取前10
 FINAL_TOP_N = 5          # 最终取前5个融合结果
 THRESHOLD_LOW = 0.75
@@ -28,9 +28,14 @@ client = chromadb.PersistentClient(path=DB_PATH)
 layer1 = client.get_collection(LAYER1_NAME)
 layer2 = client.get_collection(LAYER2_NAME)
 
-# ====== 读取 feedback ======
+# ====== 读取 feedback （★ 修改为 JSONL 读取方式） ======
+feedbacks = []
 with open(USER_FEEDBACK_PATH, "r", encoding="utf-8") as f:
-    feedbacks = json.load(f)
+    for line in f:
+        line = line.strip()
+        if line:
+            feedbacks.append(json.loads(line))
+
 print(f"📥 Loaded {len(feedbacks)} feedback entries.\n")
 
 # ====== 工具函数 ======

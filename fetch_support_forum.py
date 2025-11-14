@@ -105,7 +105,7 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--pages", type=int, default=10, help="抓取页数 (每页约20条)")
     ap.add_argument("--delay", type=float, default=1.5, help="请求间隔 (秒)")
-    ap.add_argument("--out", default="support_forum.jsonl", help="输出文件")
+    ap.add_argument("--out", default="review_forum.jsonl", help="输出文件")
     args = ap.parse_args()
 
     crawl_forum(pages=args.pages, delay=args.delay, out_path=args.out)
